@@ -20,7 +20,7 @@
   "tg": "@incom_estate_mos",
   "district": "Москва",
   "note": "одно из крупнейших, много загородки",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -32,7 +32,7 @@
   "tg": null,
   "district": "Москва",
   "note": "крупная сеть офисов",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -44,7 +44,7 @@
   "tg": "@Metrium_novostroyki",
   "district": "Москва",
   "note": "новостройки, премиум",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -56,7 +56,7 @@
   "tg": "@estatet1",
   "district": "Москва",
   "note": "новостройки бизнес/премиум · email перепроверить: похоже на заглушку с сайта",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -68,7 +68,7 @@
   "tg": null,
   "district": "Москва",
   "note": "элитная недвижимость, активные в соцсетях",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -80,7 +80,7 @@
   "tg": null,
   "district": "Москва",
   "note": "элитка, загородные дома — идеальны для FPV",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -92,19 +92,19 @@
   "tg": null,
   "district": "Москва",
   "note": "экс-Savills, элитка",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
   "id": "pointestate",
   "name": "Point Estate",
   "site": "https://www.pointestate.ru",
-  "email": null,
-  "phone": null,
+  "email": "info@pointestate.ru",
+  "phone": "+71907811366",
   "tg": "@Point_Estate",
   "district": "Москва",
   "note": "загородная элитка, Рублёвка",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -116,7 +116,7 @@
   "tg": "@ndv_supermarket",
   "district": "Москва",
   "note": "",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -128,7 +128,7 @@
   "tg": null,
   "district": "Москва",
   "note": "сайт блокирует зарубежные IP — контакты вписать вручную",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

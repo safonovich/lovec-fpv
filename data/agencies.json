@@ -99,12 +99,12 @@
   "id": "pointestate",
   "name": "Point Estate",
   "site": "https://www.pointestate.ru",
-  "email": null,
-  "phone": null,
-  "tg": null,
+  "email": "wght@100..900",
+  "phone": "+71907811366",
+  "tg": "@Point_Estate",
   "district": "Москва",
   "note": "загородная элитка, Рублёвка",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

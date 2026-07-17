@@ -1,11 +1,28 @@
-"""Отправка КП по email через SMTP почты коллеги (app password в секретах)."""
+"""Отправка КП по email через SMTP (app password в секретах).
+Письмо уходит в двух версиях: plain text + HTML, где ссылка на портфолио
+завуалирована в аккуратный анкор вместо голого URL."""
 
 from __future__ import annotations
 
+import html as _html
 import os
+import re
 import smtplib
 from email.message import EmailMessage
 from email.utils import formataddr
+
+
+def _to_html(body: str, cfg: dict) -> str:
+    esc = _html.escape(body)
+    kp = cfg.get("kp", {})
+    purl, brand = kp.get("portfolio_url", ""), kp.get("author_name", "")
+    if purl and purl in esc:
+        esc = esc.replace(
+            purl, f'<a href="{purl}" style="color:#8a6d3b;text-decoration:underline">'
+                  f'Портфолио {brand} — смотреть работы и цены</a>')
+    esc = re.sub(r'(?<!")(https?://[^\s<]+)', r'<a href="\1">\1</a>', esc)
+    return ('<div style="font-family:Georgia,serif;font-size:15px;line-height:1.65;'
+            f'color:#1a1a1a;white-space:pre-wrap;max-width:640px">{esc}</div>')
 
 
 def send(to: str, subject: str, body: str, cfg: dict, log,
@@ -26,6 +43,10 @@ def send(to: str, subject: str, body: str, cfg: dict, log,
         msg["In-Reply-To"] = in_reply_to
         msg["References"] = in_reply_to
     msg.set_content(body)
+    try:
+        msg.add_alternative(_to_html(body, cfg), subtype="html")
+    except Exception:
+        pass  # HTML-версия опциональна — plain text уйдёт в любом случае
     try:
         host, port = e["smtp_host"], int(e.get("smtp_port", 465))
         if port == 465:

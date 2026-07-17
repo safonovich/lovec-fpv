@@ -1,0 +1,97 @@
+"""Telegram: карточка агентства с готовым КП и кнопками отправки."""
+
+from __future__ import annotations
+
+import hashlib
+import os
+import re
+import time
+import urllib.parse
+
+import requests
+
+
+def _api(method: str) -> str:
+    return f"https://api.telegram.org/bot{os.environ['TG_BOT_TOKEN']}/{method}"
+
+
+def _chat_id() -> str:
+    return os.environ["TG_CHAT_ID"]
+
+
+def short_key(agency_id: str) -> str:
+    return hashlib.sha1(agency_id.encode()).hexdigest()[:12]
+
+
+def _esc(s: str) -> str:
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def send_lead(agency: dict, subject: str, body: str, pending: dict, log) -> None:
+    sk = short_key(agency["id"])
+    contacts = []
+    if agency.get("email"):
+        contacts.append(f"📧 {agency['email']}")
+    if agency.get("phone"):
+        contacts.append(f"📞 {agency['phone']}")
+    if agency.get("tg"):
+        contacts.append(f"✈️ {agency['tg']}")
+    text = (f"🏠 <b>{_esc(agency['name'])}</b>\n"
+            f"🌍 {agency.get('site', '—')}\n"
+            + (" · ".join(contacts) + "\n" if contacts else "⚠️ контакты не найдены\n")
+            + f"\n<b>Тема:</b> {_esc(subject)}\n"
+            f"<blockquote>{_esc(body[:2800])}</blockquote>\n"
+            "Кнопка 📧 отправит именно этот текст. Для TG/WA — скопируй текст выше.")
+
+    row1 = []
+    if agency.get("email"):
+        row1.append({"text": "📧 Отправить на email", "callback_data": f"s|{sk}"})
+    row1.append({"text": "👎 Пропустить", "callback_data": f"x|{sk}"})
+    row2 = []
+    if agency.get("tg"):
+        row2.append({"text": "✈️ Открыть Telegram",
+                     "url": f"https://t.me/{agency['tg'].lstrip('@')}"})
+    if agency.get("phone"):
+        wa = re.sub(r"\D", "", agency["phone"])
+        wa_text = urllib.parse.quote(body[:1500])
+        row2.append({"text": "💬 WhatsApp (текст подставится)",
+                     "url": f"https://wa.me/{wa}?text={wa_text}"})
+    kb = {"inline_keyboard": [r for r in (row1, row2) if r]}
+
+    try:
+        r = requests.post(_api("sendMessage"), json={
+            "chat_id": _chat_id(), "text": text, "parse_mode": "HTML",
+            "disable_web_page_preview": True, "reply_markup": kb}, timeout=20)
+        r.raise_for_status()
+        pending[sk] = {"agency_id": agency["id"], "subject": subject,
+                       "body": body, "ts": time.time()}
+    except Exception as e:
+        log(f"telegram: не отправилось — {e}")
+
+
+def send_reply_card(agency: dict, incoming: str, draft: str, sk: str, log) -> None:
+    """Ответ агентства + черновик Claude. Отправка — по кнопке."""
+    text = (f"📨 <b>{_esc(agency['name'])}</b> ответили:\n"
+            f"<blockquote>{_esc(incoming[:800])}</blockquote>\n"
+            f"✍️ <b>Черновик ответа:</b>\n"
+            f"<blockquote>{_esc(draft[:1800])}</blockquote>")
+    kb = {"inline_keyboard": [[
+        {"text": "📤 Отправить ответ", "callback_data": f"r|{sk}"},
+        {"text": "✏️ Сам отвечу", "callback_data": f"n|{sk}"},
+    ]]}
+    try:
+        r = requests.post(_api("sendMessage"), json={
+            "chat_id": _chat_id(), "text": text, "parse_mode": "HTML",
+            "disable_web_page_preview": True, "reply_markup": kb}, timeout=20)
+        r.raise_for_status()
+    except Exception as e:
+        log(f"telegram(reply): не отправилось — {e}")
+
+
+def send_service(text: str, log) -> None:
+    try:
+        requests.post(_api("sendMessage"), json={
+            "chat_id": _chat_id(), "text": text,
+            "disable_web_page_preview": True}, timeout=20)
+    except Exception as e:
+        log(f"telegram(service): {e}")

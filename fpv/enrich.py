@@ -1,0 +1,64 @@
+"""Обогащение: тянем сайт агентства, достаём email/телефон и текст для персонализации КП."""
+
+from __future__ import annotations
+
+import re
+
+import requests
+
+UA = {"User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36")}
+
+EMAIL_RE = re.compile(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+")
+PHONE_RE = re.compile(r"(?:\+7|8)[\s(-]*\d{3}[\s)-]*\d{3}[\s-]*\d{2}[\s-]*\d{2}")
+TG_RE = re.compile(r"(?:t\.me|telegram\.me)/([A-Za-z0-9_]{4,32})")
+TAG_RE = re.compile(r"<script.*?</script>|<style.*?</style>|<[^>]+>", re.S)
+
+BAD_EMAIL = ("example.", "sentry", "wixpress", "@2x", ".png", ".jpg", ".webp", ".svg")
+CONTACT_PATHS = ("", "/contacts", "/contact", "/kontakty", "/about", "/o-kompanii")
+
+
+def _get(url: str, log) -> str:
+    try:
+        r = requests.get(url, headers=UA, timeout=15, allow_redirects=True)
+        if r.ok and "text/html" in r.headers.get("content-type", "html"):
+            return r.text[:400_000]
+    except Exception as e:
+        log(f"enrich: {url} — {e}")
+    return ""
+
+
+def _clean_email(m: str) -> str | None:
+    m = m.strip().strip(".").lower()
+    return None if any(b in m for b in BAD_EMAIL) else m
+
+
+def enrich(agency: dict, log) -> dict:
+    """Возвращает {"email","phone","tg","site_text"} — только найденное, ничего не выдумывает."""
+    site = (agency.get("site") or "").rstrip("/")
+    found: dict = {}
+    if not site:
+        return found
+    text_all = ""
+    for path in CONTACT_PATHS:
+        html = _get(site + path, log)
+        if not html:
+            continue
+        text_all += html
+        if path == "":
+            plain = TAG_RE.sub(" ", html)
+            found["site_text"] = re.sub(r"\s+", " ", plain).strip()[:1500]
+        if found.get("email") and found.get("phone"):
+            break
+        if not found.get("email"):
+            for m in EMAIL_RE.findall(html):
+                if (e := _clean_email(m)):
+                    found["email"] = e
+                    break
+        if not found.get("phone"):
+            if (p := PHONE_RE.search(html)):
+                digits = re.sub(r"\D", "", p.group())
+                found["phone"] = "+7" + digits[-10:]
+    if not agency.get("tg") and (t := TG_RE.search(text_all)):
+        found["tg"] = "@" + t.group(1)
+    return found

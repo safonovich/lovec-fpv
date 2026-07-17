@@ -1,9 +1,10 @@
 """Единый LLM-клиент. Провайдер выбирается в [llm] config.toml:
+- "chad"      — ChadGPT (chadgpt.ru): русский сервис, расход из подписки
 - "anthropic" — Claude API
-- "openai"   — любой OpenAI-совместимый API: OpenRouter, Grok (xAI),
-               DeepSeek, LM Studio и т.д. (api_base + model)
-Для OpenRouter поддерживается цепочка запасных моделей (fallback_models):
-бесплатные модели бывают перегружены — тогда пробуем следующую.
+- "openai"    — любой OpenAI-совместимый API: OpenRouter, AITunnel,
+                ProxyAPI, Grok (xAI), DeepSeek, LM Studio (api_base + model)
+Для openai-провайдера поддерживается цепочка запасных моделей
+(fallback_models): бесплатные бывают перегружены — пробуем следующую.
 Ключ — в секрете LLM_API_KEY (ANTHROPIC_API_KEY тоже подхватится)."""
 
 from __future__ import annotations
@@ -29,7 +30,26 @@ def chat(system: str, user: str, cfg: dict, log, max_tokens: int = 700) -> str |
     if not l.get("enabled", True) or not key:
         return None
 
-    if l.get("provider", "anthropic") == "anthropic":
+    provider = l.get("provider", "anthropic")
+
+    if provider == "chad":
+        model = l.get("model", "gpt-5.2")
+        try:
+            r = requests.post(
+                f"https://ask.chadgpt.ru/api/public/{model}",
+                json={"message": f"{system}\n\n---\n\n{user}", "api_key": key},
+                timeout=90)
+            r.raise_for_status()
+            data = r.json()
+            if data.get("is_success") and data.get("response"):
+                return str(data["response"])
+            log(f"llm(chad): {data.get('error_message') or data}")
+            return None
+        except Exception as e:
+            log(f"llm(chad): {_err_text(e)}")
+            return None
+
+    if provider == "anthropic":
         try:
             r = requests.post(
                 "https://api.anthropic.com/v1/messages",

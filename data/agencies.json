@@ -111,12 +111,12 @@
   "id": "ndv",
   "name": "НДВ Супермаркет Недвижимости",
   "site": "https://www.ndv.ru",
-  "email": null,
-  "phone": null,
-  "tg": null,
+  "email": "info@ndv.ru",
+  "phone": "+74959884422",
+  "tg": "@ndv_supermarket",
   "district": "Москва",
   "note": "",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

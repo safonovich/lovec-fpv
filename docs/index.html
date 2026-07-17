@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FPV-видеотуры по недвижимости — Москва</title>
+<meta name="description" content="Съёмка недвижимости FPV-дроном: пролёт одним кадром — фасад, комнаты, участок, район. Видео, которое продаёт объект.">
+<style>
+  :root{
+    --bg:#0b0e13; --panel:#121722; --panel2:#171e2c;
+    --text:#e8ecf4; --muted:#8b95a8; --accent:#5eead4; --accent2:#38bdf8;
+    --radius:16px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  a{color:var(--accent)}
+  /* HERO */
+  header{position:relative;overflow:hidden;padding:72px 0 48px;background:
+    radial-gradient(900px 400px at 70% -10%, rgba(56,189,248,.18), transparent),
+    radial-gradient(600px 300px at 10% 10%, rgba(94,234,212,.12), transparent)}
+  .bgvid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    opacity:0;z-index:0;transition:opacity 1.2s ease}
+  .bgvid.on{opacity:.28}
+  header:after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(180deg, rgba(11,14,19,.25), rgba(11,14,19,.92))}
+  header .wrap{position:relative;z-index:2}
+  .tag{display:inline-block;padding:6px 14px;border:1px solid rgba(94,234,212,.4);
+    border-radius:999px;color:var(--accent);font-size:13px;letter-spacing:.08em;
+    text-transform:uppercase;margin-bottom:22px}
+  h1{font-size:clamp(30px,5.5vw,52px);line-height:1.12;font-weight:800;letter-spacing:-.02em}
+  h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{margin:20px 0 32px;max-width:640px;color:var(--muted);font-size:18px}
+  .cta{display:inline-block;padding:14px 28px;border-radius:12px;font-weight:700;
+    text-decoration:none;background:linear-gradient(90deg,var(--accent),var(--accent2));
+    color:#06202a}
+  .cta.ghost{background:none;border:1px solid rgba(139,149,168,.4);color:var(--text);margin-left:12px}
+  /* SECTIONS */
+  section{padding:56px 0}
+  h2{font-size:clamp(22px,3.5vw,32px);font-weight:800;margin-bottom:8px}
+  .lead{color:var(--muted);margin-bottom:32px;max-width:640px}
+  /* WHY */
+  .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid rgba(139,149,168,.12);
+    border-radius:var(--radius);padding:24px}
+  .card b{display:block;font-size:17px;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:15px}
+  .num{font-size:26px;margin-bottom:12px}
+  /* VIDEOS */
+  .vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+  .vcard{background:var(--panel);border:1px solid rgba(139,149,168,.12);
+    border-radius:var(--radius);overflow:hidden}
+  .vcard video{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#000}
+  .vcard .cap{padding:12px 16px;font-size:14px;color:var(--muted)}
+  #vfallback{display:none;margin-top:12px}
+  /* PRICES */
+  .pcard{position:relative}
+  .pcard .price{font-size:26px;font-weight:800;color:var(--accent);margin:10px 0 4px}
+  .pcard .per{color:var(--muted);font-size:13px;margin-bottom:12px}
+  .pcard ul{list-style:none}
+  .pcard li{color:var(--muted);font-size:15px;padding-left:20px;position:relative;margin-bottom:6px}
+  .pcard li:before{content:"—";position:absolute;left:0;color:var(--accent)}
+  .hot{border-color:rgba(94,234,212,.45)}
+  .hot:after{content:"чаще всего берут";position:absolute;top:-11px;right:16px;
+    background:var(--accent);color:#06202a;font-size:11px;font-weight:700;
+    padding:3px 10px;border-radius:999px}
+  /* STEPS */
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;counter-reset:s}
+  .step{background:var(--panel2);border-radius:var(--radius);padding:20px;counter-increment:s}
+  .step:before{content:counter(s);display:inline-flex;width:30px;height:30px;
+    align-items:center;justify-content:center;border-radius:50%;
+    background:var(--accent);color:#06202a;font-weight:800;margin-bottom:10px}
+  .step p{color:var(--muted);font-size:14px}
+  .step b{display:block;margin-bottom:4px}
+  /* CONTACT */
+  #contact .card{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+  .clinks{display:flex;flex-wrap:wrap;gap:12px}
+  .clinks a{display:inline-block;padding:12px 20px;border-radius:12px;text-decoration:none;
+    border:1px solid rgba(94,234,212,.4);color:var(--text);font-weight:600}
+  footer{padding:32px 0 48px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="tag">FPV · недвижимость · Москва</span>
+    <h1>Видео, которое<br><span>продаёт объект</span></h1>
+    <p class="sub">Пролёт FPV-дроном одним кадром — фасад, все комнаты, участок
+    и вид на район без единой склейки. Зритель «проходит» по дому за минуту
+    и досматривает до конца — в отличие от галереи из 40 фото.</p>
+    <a class="cta" href="#contact">Обсудить объект</a>
+    <a class="cta ghost" href="#work">Смотреть примеры</a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Почему это работает</h2>
+    <p class="lead">FPV-видеотур — не «красивые кадры с воздуха», а инструмент продажи.</p>
+    <div class="grid3">
+      <div class="card"><div class="num">🎯</div><b>Объявление выделяется</b>
+        <p>Среди сотен однотипных карточек с фото объект с видеотуром цепляет
+        взгляд и собирает больше просмотров и обращений.</p></div>
+      <div class="card"><div class="num">🏠</div><b>Честный показ = целевые звонки</b>
+        <p>Покупатель ещё до показа понимает планировку, состояние и окружение.
+        Приезжают те, кому объект реально подходит.</p></div>
+      <div class="card"><div class="num">📱</div><b>Контент для всех площадок</b>
+        <p>Один пролёт — материал для ЦИАН, сайта, Telegram-канала агентства
+        и соцсетей. Вертикальные версии — сразу под Reels/Shorts.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Примеры работ</h2>
+    <p class="lead">Смотрите со звуком — динамика чувствуется лучше.</p>
+    <div class="vgrid" id="videos"></div>
+    <p id="vfallback">Если видео не загрузились —
+      <a href="https://disk.yandex.ru/d/ywpLwJyOCkmRrw" target="_blank" rel="noopener">смотрите всю папку с примерами на Яндекс.Диске →</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Форматы и цены</h2>
+    <p class="lead">Цена — за съёмочный день. Точный расчёт делаю под конкретный
+    объект: пришлите адрес и пару фото.</p>
+    <div class="grid3">
+      <div class="card pcard hot">
+        <b>FPV-видеотур</b>
+        <div class="price">от 55 000 ₽</div>
+        <div class="per">за съёмочный день</div>
+        <ul><li>пролёт одним кадром: фасад → комнаты → участок</li>
+        <li>картинка 4K</li>
+        <li>для квартир, домов и коммерческих площадей</li></ul>
+      </div>
+      <div class="card pcard">
+        <b>FPV кино-уровня</b>
+        <div class="price">от 120 000 ₽</div>
+        <div class="per">за съёмочный день</div>
+        <ul><li>кинокамера Blackmagic на FPV-дроне</li>
+        <li>картинка уровня рекламы застройщиков</li>
+        <li>для флагманских объектов и имиджевых роликов</li></ul>
+      </div>
+      <div class="card pcard">
+        <b>Классический дрон</b>
+        <div class="price">от 50 000 ₽</div>
+        <div class="per">за съёмочный день</div>
+        <ul><li>панорамы объекта, участка и района с высоты</li>
+        <li>плавные кинематографичные облёты</li>
+        <li>дополняет FPV-пролёт или работает отдельно</li></ul>
+      </div>
+    </div>
+    <div class="card" style="margin-top:18px">
+      <b>Оплата</b>
+      <p style="color:var(--muted);font-size:15px;margin-top:6px">
+        Наличный или безналичный расчёт — как удобно вам.
+        Работа по договору (ИП) — +10% к стоимости.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Как проходит съёмка</h2>
+    <div class="steps">
+      <div class="step"><b>Заявка</b><p>Присылаете адрес и пару фото объекта —
+        отвечаю с точным расчётом.</p></div>
+      <div class="step"><b>План пролёта</b><p>Согласуем маршрут и акценты:
+        что показать обязательно, что скрыть.</p></div>
+      <div class="step"><b>Съёмочный день</b><p>Приезжаю с оборудованием,
+        снимаю. Присутствие риелтора приветствуется.</p></div>
+      <div class="step"><b>Готовое видео</b><p>Отдаю смонтированный ролик
+        под ваши площадки — горизонталь и вертикаль.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Контакты</h2>
+    <p class="lead">Отвечаю быстро. Пришлите объект — посчитаю в тот же день.</p>
+    <div class="card">
+      <div>
+        <b style="font-size:20px" id="c-name">Егор Сафонович</b>
+        <p style="color:var(--muted)">FPV-съёмка недвижимости · Москва и область</p>
+      </div>
+      <div class="clinks">
+        <a id="c-phone" href="tel:+79096766991">📞 +7 909 676-69-91</a>
+        <a id="c-tg" href="https://t.me/SAFonovich">✈️ Telegram</a>
+        <a id="c-mail" href="mailto:safpelerin@gmail.com">📧 Написать</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">FPV-съёмка недвижимости, Москва · Полёты выполняются с соблюдением требований к использованию воздушного пространства</div>
+</footer>
+
+<script>
+/* ============ НАСТРОЙКА ============ */
+const DISK_FOLDER = "https://disk.yandex.ru/d/ywpLwJyOCkmRrw";
+// Подписи к роликам (имя файла без расширения → подпись). Не указано — покажется имя файла.
+const TITLES = {
+  "Patriki roof": "Пролёт по объекту — Патриаршие, терраса",
+  "Michalkovo v3": "Загородный объект — Михалково",
+  "marta v2 clean": "Интерьерный пролёт",
+  "letitbe v1": "Дом и участок одним кадром",
+  "MP 2-015A": "Жилой комплекс — облёт",
+  "9 MP 5-60 v360": "Объект и район с высоты",
+};
+/* =================================== */
+
+const API = "https://cloud-api.yandex.net/v1/disk/public/resources?limit=100&public_key="
+          + encodeURIComponent(DISK_FOLDER);
+
+function pickPreview(item){
+  const s = (item.sizes || []).find(x => x.name === "XL") || (item.sizes || [])[0];
+  return s ? s.url : (item.preview || "");
+}
+
+function renderGrid(items, grid){
+  items.sort((a,b) => new Date(b.modified) - new Date(a.modified));
+  for(const it of items){
+    const base = it.name.replace(/\.[^.]+$/, "");
+    const card = document.createElement("div");
+    card.className = "vcard";
+    const v = document.createElement("video");
+    v.controls = true; v.preload = "none"; v.playsInline = true;
+    v.poster = pickPreview(it);
+    v.src = it.file;
+    v.onerror = () => { card.remove(); document.getElementById("vfallback").style.display = "block"; };
+    const cap = document.createElement("div");
+    cap.className = "cap";
+    cap.textContent = TITLES[base] || base;
+    card.append(v, cap);
+    grid.append(card);
+  }
+}
+
+/* Живой фон в шапке: первый mp4 из папки, только десктоп и без экономии трафика */
+function heroVideo(items){
+  if(window.innerWidth < 900) return;
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if(navigator.connection && navigator.connection.saveData) return;
+  const mp4 = items.find(i => /\.mp4$/i.test(i.name) && i.file);
+  if(!mp4) return;
+  const v = document.createElement("video");
+  v.className = "bgvid";
+  v.muted = true; v.loop = true; v.playsInline = true; v.autoplay = true;
+  v.setAttribute("muted", ""); v.setAttribute("playsinline", "");
+  v.src = mp4.file;
+  v.oncanplay = () => v.classList.add("on");
+  v.onerror = () => v.remove();
+  document.querySelector("header").prepend(v);
+  v.play().catch(() => v.remove());
+}
+
+async function boot(){
+  const grid = document.getElementById("videos");
+  try{
+    const r = await fetch(API);
+    if(!r.ok) throw new Error(r.status);
+    const data = await r.json();
+    const items = (data._embedded?.items || []).filter(i => i.media_type === "video" && i.file);
+    if(!items.length) throw new Error("empty");
+    heroVideo(items);
+    renderGrid(items, grid);
+  }catch(e){
+    document.getElementById("vfallback").style.display = "block";
+  }
+}
+boot();
+</script>
+</body>
+</html>

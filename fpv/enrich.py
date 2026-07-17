@@ -20,7 +20,7 @@ CONTACT_PATHS = ("", "/contacts", "/contact", "/kontakty", "/about", "/o-kompani
 
 def _get(url: str, log) -> str:
     try:
-        r = requests.get(url, headers=UA, timeout=15, allow_redirects=True)
+        r = requests.get(url, headers=UA, timeout=8, allow_redirects=True)
         if r.ok and "text/html" in r.headers.get("content-type", "html"):
             return r.text[:400_000]
     except Exception as e:
@@ -43,6 +43,9 @@ def enrich(agency: dict, log) -> dict:
     for path in CONTACT_PATHS:
         html = _get(site + path, log)
         if not html:
+            if path == "":      # главная не отвечает (гео-блок/лежит) — не мучаем остальные пути
+                log(f"enrich: {site} недоступен — пропускаю")
+                break
             continue
         text_all += html
         if path == "":

@@ -45,5 +45,9 @@ def chat(system: str, user: str, cfg: dict, log, max_tokens: int = 700) -> str |
             r.raise_for_status()
             return r.json()["choices"][0]["message"]["content"]
     except Exception as e:
-        log(f"llm({provider}): {e}")
+        body = ""
+        resp = getattr(e, "response", None)
+        if resp is not None:
+            body = " — " + str(getattr(resp, "text", ""))[:300]
+        log(f"llm({provider}): {e}{body}")
         return None

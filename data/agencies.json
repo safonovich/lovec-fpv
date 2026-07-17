@@ -1,0 +1,18 @@
+[
+ {"id": "test-saf", "name": "Тестовое агентство (SAF)", "site": null, "email": "safpelerin@gmail.com", "phone": "+79096766991", "tg": "@SAFonovich", "district": "Москва", "note": "тест полного цикла: КП придёт на свою почту, ответь на него — проверишь переговорный контур", "status": "new", "sent_ts": null},
+ {"id": "incom", "name": "ИНКОМ-Недвижимость", "site": "https://www.incom.ru", "email": null, "phone": null, "tg": null, "district": "Москва", "note": "одно из крупнейших, много загородки", "status": "new", "sent_ts": null},
+ {"id": "miel", "name": "МИЭЛЬ", "site": "https://miel.ru", "email": null, "phone": null, "tg": null, "district": "Москва", "note": "крупная сеть офисов", "status": "new", "sent_ts": null},
+ {"id": "metrium", "name": "Метриум", "site": "https://www.metrium.ru", "email": null, "phone": null, "tg": null, "district": "Москва", "note": "новостройки, премиум", "status": "new", "sent_ts": null},
+ {"id": "estatet", "name": "Est-a-Tet", "site": "https://estatet.ru", "email": null, "phone": null, "tg": null, "district": "Москва", "note": "новостройки бизнес/премиум", "status": "new", "sent_ts": null},
+ {"id": "whitewill", "name": "Whitewill", "site": "https://whitewill.ru", "email": null, "phone": null, "tg": null, "district": "Москва", "note": "элитная недвижимость, активные в соцсетях", "status": "new", "sent_ts": null},
+ {"id": "kalinka", "name": "Kalinka Group", "site": "https://kalinkagroup.com", "email": null, "phone": null, "tg": null, "district": "Москва", "note": "элитка, загородные дома — идеальны для FPV", "status": "new", "sent_ts": null},
+ {"id": "intermark", "name": "Intermark Real Estate", "site": "https://www.intermark.ru", "email": null, "phone": null, "tg": null, "district": "Москва", "note": "экс-Savills, элитка", "status": "new", "sent_ts": null},
+ {"id": "pointestate", "name": "Point Estate", "site": "https://www.pointestate.ru", "email": null, "phone": null, "tg": null, "district": "Москва", "note": "загородная элитка, Рублёвка", "status": "new", "sent_ts": null},
+ {"id": "ndv", "name": "НДВ Супермаркет Недвижимости", "site": "https://www.ndv.ru", "email": null, "phone": null, "tg": null, "district": "Москва", "note": "", "status": "new", "sent_ts": null},
+ {"id": "azbuka", "name": "Азбука Жилья", "site": "https://www.azbuka.ru", "email": null, "phone": null, "tg": null, "district": "Москва", "note": "", "status": "new", "sent_ts": null},
+ {"id": "etagi", "name": "Этажи Москва", "site": "https://msk.etagi.com", "email": null, "phone": null, "tg": null, "district": "Москва", "note": "федеральная сеть", "status": "new", "sent_ts": null},
+ {"id": "vysotsky", "name": "Vysotsky Estate", "site": "https://vysotskyestate.ru", "email": null, "phone": null, "tg": null, "district": "Москва", "note": "активный YouTube — понимают силу видео", "status": "new", "sent_ts": null},
+ {"id": "welhome", "name": "Welhome", "site": "https://www.welhome.ru", "email": null, "phone": null, "tg": null, "district": "Москва", "note": "элитная городская и загородная", "status": "new", "sent_ts": null},
+ {"id": "tweed", "name": "Tweed", "site": "https://www.tweed.ru", "email": null, "phone": null, "tg": null, "district": "Москва", "note": "элитка, клубные дома", "status": "new", "sent_ts": null},
+ {"id": "century21", "name": "CENTURY 21 Россия", "site": "https://www.century21.ru", "email": null, "phone": null, "tg": null, "district": "Москва", "note": "франшизная сеть — можно писать в отдельные офисы", "status": "new", "sent_ts": null}
+]

@@ -8,8 +8,8 @@
   "tg": "@SAFonovich",
   "district": "Москва",
   "note": "тест полного цикла: КП придёт на свою почту, ответь на него — проверишь переговорный контур",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1784294249.1686497
  },
  {
   "id": "incom",
@@ -87,12 +87,12 @@
   "id": "intermark",
   "name": "Intermark Real Estate",
   "site": "https://www.intermark.ru",
-  "email": null,
-  "phone": null,
+  "email": "sales_web@intermark.ru",
+  "phone": "+74952520099",
   "tg": null,
   "district": "Москва",
   "note": "экс-Savills, элитка",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

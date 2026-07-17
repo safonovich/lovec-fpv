@@ -49,6 +49,12 @@ enabled  = true              # персонализация КП + чернов�
 provider = "openai"          # "openai" = OpenRouter, Grok/xAI, DeepSeek, LM Studio · "anthropic" = Claude
 api_base = "https://openrouter.ai/api/v1"   # xAI: https://api.x.ai/v1 · DeepSeek: https://api.deepseek.com/v1
 model    = "qwen/qwen3-next-80b-a3b-instruct:free"   # бесплатная на OpenRouter; xAI: grok-4.3 · Claude: claude-haiku-4-5
+# бесплатные модели бывают перегружены — тогда бот пробует запасные по очереди:
+fallback_models = [
+  "meta-llama/llama-3.3-70b-instruct:free",
+  "google/gemma-4-31b-it:free",
+  "openai/gpt-oss-20b:free",
+]
 # ключ — в секрете GitHub LLM_API_KEY (openrouter.ai → Keys)
 
 [email]

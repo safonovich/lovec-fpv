@@ -20,7 +20,7 @@
   "tg": "@incom_estate_mos",
   "district": "Москва",
   "note": "одно из крупнейших, много загородки",
-  "status": "offered",
+  "status": "new",
   "sent_ts": null
  },
  {
@@ -32,7 +32,7 @@
   "tg": null,
   "district": "Москва",
   "note": "крупная сеть офисов",
-  "status": "offered",
+  "status": "new",
   "sent_ts": null
  },
  {
@@ -44,7 +44,7 @@
   "tg": "@Metrium_novostroyki",
   "district": "Москва",
   "note": "новостройки, премиум",
-  "status": "offered",
+  "status": "new",
   "sent_ts": null
  },
  {
@@ -55,8 +55,8 @@
   "phone": "+74952238888",
   "tg": "@estatet1",
   "district": "Москва",
-  "note": "новостройки бизнес/премиум",
-  "status": "offered",
+  "note": "новостройки бизнес/премиум · email перепроверить: похоже на заглушку с сайта",
+  "status": "new",
   "sent_ts": null
  },
  {
@@ -68,7 +68,7 @@
   "tg": null,
   "district": "Москва",
   "note": "элитная недвижимость, активные в соцсетях",
-  "status": "offered",
+  "status": "new",
   "sent_ts": null
  },
  {
@@ -80,7 +80,7 @@
   "tg": null,
   "district": "Москва",
   "note": "элитка, загородные дома — идеальны для FPV",
-  "status": "offered",
+  "status": "new",
   "sent_ts": null
  },
  {
@@ -92,19 +92,19 @@
   "tg": null,
   "district": "Москва",
   "note": "экс-Savills, элитка",
-  "status": "offered",
+  "status": "new",
   "sent_ts": null
  },
  {
   "id": "pointestate",
   "name": "Point Estate",
   "site": "https://www.pointestate.ru",
-  "email": "wght@100..900",
-  "phone": "+71907811366",
+  "email": null,
+  "phone": null,
   "tg": "@Point_Estate",
   "district": "Москва",
   "note": "загородная элитка, Рублёвка",
-  "status": "offered",
+  "status": "new",
   "sent_ts": null
  },
  {
@@ -116,7 +116,7 @@
   "tg": "@ndv_supermarket",
   "district": "Москва",
   "note": "",
-  "status": "offered",
+  "status": "new",
   "sent_ts": null
  },
  {
@@ -127,8 +127,8 @@
   "phone": null,
   "tg": null,
   "district": "Москва",
-  "note": "",
-  "status": "offered",
+  "note": "сайт блокирует зарубежные IP — контакты вписать вручную",
+  "status": "new",
   "sent_ts": null
  },
  {

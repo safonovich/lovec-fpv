@@ -27,7 +27,8 @@ def _esc(s: str) -> str:
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def send_lead(agency: dict, subject: str, body: str, pending: dict, log) -> None:
+def send_lead(agency: dict, subject: str, body: str, pending: dict, log,
+              portfolio: str = "") -> None:
     sk = short_key(agency["id"])
     contacts = []
     if agency.get("email"):
@@ -36,12 +37,16 @@ def send_lead(agency: dict, subject: str, body: str, pending: dict, log) -> None
         contacts.append(f"📞 {agency['phone']}")
     if agency.get("tg"):
         contacts.append(f"✈️ {agency['tg']}")
+    body_html = _esc(body[:2800])
+    if portfolio and _esc(portfolio) in body_html:   # голый URL → аккуратная гиперссылка
+        body_html = body_html.replace(
+            _esc(portfolio), f'<a href="{portfolio}">Примеры работ — портфолио WildProp</a>')
     text = (f"🏠 <b>{_esc(agency['name'])}</b>\n"
             f"🌍 {agency.get('site', '—')}\n"
             + (" · ".join(contacts) + "\n" if contacts else "⚠️ контакты не найдены\n")
             + f"\n<b>Тема:</b> {_esc(subject)}\n"
-            f"<blockquote>{_esc(body[:2800])}</blockquote>\n"
-            "Кнопка 📧 отправит именно этот текст. Для TG/WA — скопируй текст выше.")
+            f"<blockquote>{body_html}</blockquote>\n"
+            "Кнопка 📧 отправит именно этот текст (в письме ссылка тоже будет кликабельной).")
 
     row1 = []
     if agency.get("email"):

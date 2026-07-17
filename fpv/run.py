@@ -83,7 +83,8 @@ def main() -> None:
                 if found.get(f) and not a.get(f):
                     a[f] = found[f]
             subject, body = kp.make(a, found.get("site_text", ""), cfg, log)
-            notify.send_lead(a, subject, body, pending, log)
+            notify.send_lead(a, subject, body, pending, log,
+                             cfg["kp"].get("portfolio_url", ""))
             a["status"] = "offered"
             log(f"lead: {a['name']}")
         state["last_leads_date"] = today

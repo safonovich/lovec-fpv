@@ -46,10 +46,10 @@ template = """Здравствуйте!
 
 [llm]
 enabled  = true              # персонализация КП + черновики ответов
-provider = "openai"          # "openai" = Grok/xAI, DeepSeek, OpenRouter, LM Studio · "anthropic" = Claude
-api_base = "https://api.x.ai/v1"   # для DeepSeek: https://api.deepseek.com/v1, OpenRouter: https://openrouter.ai/api/v1
-model    = "grok-4.3"        # актуальная модель xAI (июль 2026); у Claude: claude-haiku-4-5
-# ключ — в секрете GitHub LLM_API_KEY (console.x.ai → API Keys)
+provider = "openai"          # "openai" = OpenRouter, Grok/xAI, DeepSeek, LM Studio · "anthropic" = Claude
+api_base = "https://openrouter.ai/api/v1"   # xAI: https://api.x.ai/v1 · DeepSeek: https://api.deepseek.com/v1
+model    = "qwen/qwen3-next-80b-a3b-instruct:free"   # бесплатная на OpenRouter; xAI: grok-4.3 · Claude: claude-haiku-4-5
+# ключ — в секрете GitHub LLM_API_KEY (openrouter.ai → Keys)
 
 [email]
 enabled   = true

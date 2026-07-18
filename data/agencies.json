@@ -136,11 +136,11 @@
   "name": "Этажи Москва",
   "site": "https://msk.etagi.com",
   "email": null,
-  "phone": null,
-  "tg": null,
+  "phone": "+79388899490",
+  "tg": "@EtagiComSpace_Bot",
   "district": "Москва",
   "note": "федеральная сеть",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -152,19 +152,19 @@
   "tg": null,
   "district": "Москва",
   "note": "активный YouTube — понимают силу видео",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
   "id": "welhome",
   "name": "Welhome",
   "site": "https://www.welhome.ru",
-  "email": null,
-  "phone": null,
-  "tg": null,
+  "email": "welhome@welhome.ru",
+  "phone": "+74952560973",
+  "tg": "@ASKWELHOMEBOT",
   "district": "Москва",
   "note": "элитная городская и загородная",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

@@ -42,7 +42,13 @@ def process(pending: dict, agencies: list[dict], offset: int, cfg: dict, log) ->
     try:
         r = requests.get(_api("getUpdates"),
                          params={"offset": offset, "timeout": 0}, timeout=25)
-        updates = r.json().get("result", [])
+        data = r.json()
+        if not data.get("ok"):
+            log(f"callbacks: Telegram отверг getUpdates — {data.get('description')}"
+                " (если тут ошибка 409/webhook — у бота настроен webhook,"
+                " нужен отдельный бот без webhook)")
+            return offset
+        updates = data.get("result", [])
     except Exception as e:
         log(f"callbacks: getUpdates не сработал — {e}")
         return offset

@@ -10,7 +10,8 @@ UA = {"User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                      "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36")}
 
 EMAIL_RE = re.compile(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[a-zA-Z]{2,}")
-PHONE_RE = re.compile(r"(?:\+7|8)[\s(-]*\d{3}[\s)-]*\d{3}[\s-]*\d{2}[\s-]*\d{2}")
+PHONE_RE = re.compile(r"(?<!\d)(?:\+7|8)[\s(-]*(\d{3})[\s)-]*\d{3}[\s-]*\d{2}[\s-]*\d{2}(?!\d)")
+GOOD_CODES = {"495", "499", "498", "800"}   # + мобильные 9xx
 TG_RE = re.compile(r"(?:t\.me|telegram\.me)/([A-Za-z0-9_]{4,32})")
 TAG_RE = re.compile(r"<script.*?</script>|<style.*?</style>|<[^>]+>", re.S)
 
@@ -59,9 +60,12 @@ def enrich(agency: dict, log) -> dict:
                     found["email"] = e
                     break
         if not found.get("phone"):
-            if (p := PHONE_RE.search(html)):
-                digits = re.sub(r"\D", "", p.group())
-                found["phone"] = "+7" + digits[-10:]
+            for p in PHONE_RE.finditer(html):
+                code = p.group(1)
+                if code in GOOD_CODES or code.startswith("9"):
+                    digits = re.sub(r"\D", "", p.group())
+                    found["phone"] = "+7" + digits[-10:]
+                    break
     if not agency.get("tg") and (t := TG_RE.search(text_all)):
         found["tg"] = "@" + t.group(1)
     return found

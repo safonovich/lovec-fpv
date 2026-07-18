@@ -117,6 +117,7 @@ def check(agencies: list[dict], pending: dict, last_uid: int, cfg: dict, log) ->
     if not (user and pwd and host):
         return last_uid
 
+    M = None
     try:
         M = imaplib.IMAP4_SSL(host, timeout=30)
         M.login(user, pwd)
@@ -125,6 +126,11 @@ def check(agencies: list[dict], pending: dict, last_uid: int, cfg: dict, log) ->
         uids = [int(u) for u in (data[0] or b"").split() if int(u) > last_uid]
     except Exception as e:
         log(f"inbox: IMAP не сработал — {e}")
+        if M is not None:
+            try:
+                M.logout()
+            except Exception:
+                pass
         return last_uid
 
     new_last = last_uid

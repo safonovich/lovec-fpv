@@ -27,7 +27,7 @@ def main() -> None:
             continue
         found = enrich.enrich(a, log)
         got = False
-        for f in ("email", "phone", "tg"):
+        for f in ("email", "phone", "tg", "wa"):
             if found.get(f) and not a.get(f):
                 a[f] = found[f]
                 got = True

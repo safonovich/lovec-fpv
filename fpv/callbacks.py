@@ -39,6 +39,16 @@ def _mark(cq: dict, label: str) -> None:
 
 def process(pending: dict, agencies: list[dict], offset: int, cfg: dict, log) -> int:
     """Возвращает новый offset. pending и agencies правятся на месте."""
+    # Диагностика/самолечение: webhook блокирует getUpdates — снимаем его
+    try:
+        info = requests.get(_api("getWebhookInfo"), timeout=10).json().get("result", {})
+        if info.get("url"):
+            log(f"callbacks: ⚠️ на боте стоял webhook ({info['url'][:60]}…) — снимаю")
+            requests.get(_api("deleteWebhook"), timeout=10)
+        if info.get("pending_update_count"):
+            log(f"callbacks: в очереди Telegram {info['pending_update_count']} необработанных событий")
+    except Exception:
+        pass
     try:
         r = requests.get(_api("getUpdates"),
                          params={"offset": offset, "timeout": 0}, timeout=25)
@@ -53,6 +63,8 @@ def process(pending: dict, agencies: list[dict], offset: int, cfg: dict, log) ->
         log(f"callbacks: getUpdates не сработал — {e}")
         return offset
 
+    if updates:
+        log(f"callbacks: получено событий: {len(updates)}")
     by_id = {a["id"]: a for a in agencies}
     new_offset = offset
     for u in updates:
@@ -63,6 +75,8 @@ def process(pending: dict, agencies: list[dict], offset: int, cfg: dict, log) ->
         action, sk = cq["data"].split("|", 1)
         info = pending.get(sk)
         if action == "noop" or not info:
+            if action != "noop":
+                log(f"callbacks: нажатие по устаревшей карточке ({action}|{sk})")
             _answer(cq["id"], "Карточка устарела" if action != "noop" else "")
             continue
         agency = by_id.get(info["agency_id"])

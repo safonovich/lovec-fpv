@@ -13,6 +13,7 @@ EMAIL_RE = re.compile(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[a-z
 PHONE_RE = re.compile(r"(?<!\d)(?:\+7|8)[\s(-]*(\d{3})[\s)-]*\d{3}[\s-]*\d{2}[\s-]*\d{2}(?!\d)")
 GOOD_CODES = {"495", "499", "498", "800"}   # + мобильные 9xx
 TG_RE = re.compile(r"(?:t\.me|telegram\.me)/([A-Za-z0-9_]{4,32})")
+WA_RE = re.compile(r"(?:wa\.me/|api\.whatsapp\.com/send\?phone=)\+?(\d{10,15})")
 TAG_RE = re.compile(r"<script.*?</script>|<style.*?</style>|<[^>]+>", re.S)
 
 BAD_EMAIL = ("example.", "sentry", "wixpress", "@2x", ".png", ".jpg", ".webp", ".svg")
@@ -68,4 +69,8 @@ def enrich(agency: dict, log) -> dict:
                     break
     if not agency.get("tg") and (t := TG_RE.search(text_all)):
         found["tg"] = "@" + t.group(1)
+    # wa.me-ссылка с их сайта = гарантированно живой WhatsApp агентства
+    if not agency.get("wa") and (w := WA_RE.search(text_all)):
+        digits = w.group(1)
+        found["wa"] = "+" + (("7" + digits[-10:]) if not digits.startswith("7") else digits)
     return found

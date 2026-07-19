@@ -53,11 +53,15 @@ def send_lead(agency: dict, subject: str, body: str, pending: dict, log,
         row1.append({"text": "📧 Отправить на email", "callback_data": f"s|{sk}"})
     row1.append({"text": "👎 Пропустить", "callback_data": f"x|{sk}"})
     row2 = []
-    if agency.get("tg"):
-        row2.append({"text": "✈️ Открыть Telegram",
+    if agency.get("tg"):     # с сайтов собираются каналы, не личные контакты — не врём
+        row2.append({"text": "📣 Канал в TG",
                      "url": f"https://t.me/{agency['tg'].lstrip('@')}"})
-    if agency.get("phone"):
-        wa = re.sub(r"\D", "", agency["phone"])
+    # WA-кнопка только там, где реально есть WhatsApp: wa.me-ссылка с их сайта
+    # или мобильный номер. Городские (495 и т.п.) в WA не регистрируют.
+    wa_num = agency.get("wa") or (
+        agency.get("phone") if str(agency.get("phone", "")).startswith("+79") else None)
+    if wa_num:
+        wa = re.sub(r"\D", "", wa_num)
         wa_text = urllib.parse.quote(body[:1500])
         row2.append({"text": "💬 WhatsApp (текст подставится)",
                      "url": f"https://wa.me/{wa}?text={wa_text}"})

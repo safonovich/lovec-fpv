@@ -79,7 +79,7 @@ def main() -> None:
                 state["base_empty_warned"] = today
         for a in batch:
             found = enrich.enrich(a, log)
-            for f in ("email", "phone", "tg"):
+            for f in ("email", "phone", "tg", "wa"):
                 if found.get(f) and not a.get(f):
                     a[f] = found[f]
             subject, body = kp.make(a, found.get("site_text", ""), cfg, log)

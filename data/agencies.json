@@ -171,12 +171,12 @@
   "id": "tweed",
   "name": "Tweed",
   "site": "https://www.tweed.ru",
-  "email": null,
-  "phone": null,
-  "tg": null,
+  "email": "info@tweed.ru",
+  "phone": "+74951250085",
+  "tg": "@tweed_realtyy",
   "district": "Москва",
   "note": "элитка, клубные дома",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -184,11 +184,11 @@
   "name": "CENTURY 21 Россия",
   "site": "https://www.century21.ru",
   "email": null,
-  "phone": null,
-  "tg": null,
+  "phone": "+74955327721",
+  "tg": "@c21russia",
   "district": "Москва",
   "note": "франшизная сеть — можно писать в отдельные офисы",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  }
 ]

@@ -23,6 +23,21 @@ def short_key(agency_id: str) -> str:
     return hashlib.sha1(agency_id.encode()).hexdigest()[:12]
 
 
+MENU_KB = {"keyboard": [[{"text": "📇 Прислать карточку"},
+                         {"text": "🔄 Обновить базу"}]],
+           "resize_keyboard": True, "is_persistent": True}
+
+
+def send_menu(text: str, log) -> None:
+    """Сообщение с постоянной клавиатурой-меню внизу чата."""
+    try:
+        requests.post(_api("sendMessage"), json={
+            "chat_id": _chat_id(), "text": text,
+            "reply_markup": MENU_KB}, timeout=20)
+    except Exception as e:
+        log(f"telegram(menu): {e}")
+
+
 def _esc(s: str) -> str:
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
@@ -40,7 +55,7 @@ def send_lead(agency: dict, subject: str, body: str, pending: dict, log,
     body_html = _esc(body[:2800])
     if portfolio and _esc(portfolio) in body_html:   # голый URL → аккуратная гиперссылка
         body_html = body_html.replace(
-            _esc(portfolio), f'<a href="{portfolio}">Примеры работ — портфолио WildProp</a>')
+            _esc(portfolio), f'<a href="{portfolio}">Примеры работ — портфолио WildProps</a>')
     text = (f"🏠 <b>{_esc(agency['name'])}</b>\n"
             f"🌍 {agency.get('site', '—')}\n"
             + (" · ".join(contacts) + "\n" if contacts else "⚠️ контакты не найдены\n")

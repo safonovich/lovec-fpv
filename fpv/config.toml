@@ -8,9 +8,9 @@ active_hours_msk = [9, 22]   # вне этих часов (МСК) запуск 
 [kp]
 # ⚠️ Тестовый запуск на контактах SAF — перед передачей коллеге заменить телефон/почту
 portfolio_url = "https://safonovich.github.io/lovec-fpv/"
-author_name   = "WildProp"
+author_name   = "WildProps"
 author_phone  = "+7 909 676-69-91"
-subject       = "WildProp — FPV-видеотур для объектов {agency}"
+subject       = "WildProps — FPV-видеотур для объектов {agency}"
 
 # Форматы и цены — Claude выбирает 1-2 подходящих под агентство.
 # Внутренний прайс (для справки): FPV O4 55к · Action5/GoPro 60к · BMD micro g2 120к

@@ -1,5 +1,6 @@
 """Кнопки: забираем нажатия через getUpdates и выполняем действия.
 s|<sk> — отправить КП на email агентства, x|<sk> — пропустить.
+Плюс кнопки-меню: «📇 Прислать карточку» и «🔄 Обновить базу».
 У бота НЕ должен стоять webhook (боты из BotFather по умолчанию без него)."""
 
 from __future__ import annotations
@@ -9,7 +10,7 @@ import time
 
 import requests
 
-from fpv import mailer
+from fpv import mailer, notify
 
 
 def _api(method: str) -> str:
@@ -37,8 +38,9 @@ def _mark(cq: dict, label: str) -> None:
         pass
 
 
-def process(pending: dict, agencies: list[dict], offset: int, cfg: dict, log) -> int:
-    """Возвращает новый offset. pending и agencies правятся на месте."""
+def process(pending: dict, agencies: list[dict], offset: int, cfg: dict, log):
+    """Возвращает (новый offset, команды меню). pending и agencies правятся на месте."""
+    cmds: dict = {}
     # Диагностика/самолечение: webhook блокирует getUpdates — снимаем его
     try:
         info = requests.get(_api("getWebhookInfo"), timeout=10).json().get("result", {})
@@ -57,11 +59,11 @@ def process(pending: dict, agencies: list[dict], offset: int, cfg: dict, log) ->
             log(f"callbacks: Telegram отверг getUpdates — {data.get('description')}"
                 " (если тут ошибка 409/webhook — у бота настроен webhook,"
                 " нужен отдельный бот без webhook)")
-            return offset
+            return offset, cmds
         updates = data.get("result", [])
     except Exception as e:
         log(f"callbacks: getUpdates не сработал — {e}")
-        return offset
+        return offset, cmds
 
     if updates:
         log(f"callbacks: получено событий: {len(updates)}")
@@ -69,6 +71,22 @@ def process(pending: dict, agencies: list[dict], offset: int, cfg: dict, log) ->
     new_offset = offset
     for u in updates:
         new_offset = max(new_offset, u["update_id"] + 1)
+        msg = u.get("message")
+        if msg:                                     # текстовые команды/кнопки меню
+            if str(msg.get("chat", {}).get("id", "")) != str(_chat_id()):
+                continue
+            t = (msg.get("text") or "").strip().lower()
+            if "карточк" in t or t.startswith("/card"):
+                cmds["card"] = cmds.get("card", 0) + 1
+                notify.send_menu("📇 Принято — готовлю карточку…", log)
+                log("menu: запрошена карточка")
+            elif "обновить базу" in t or t.startswith("/discover"):
+                cmds["discover"] = True
+                notify.send_menu("🔄 Принято — ищу новые агентства в OSM…", log)
+                log("menu: запрошено обновление базы")
+            elif t.startswith("/start") or t.startswith("/menu"):
+                notify.send_menu("WildProps на связи. Кнопки меню снизу 👇", log)
+            continue
         cq = u.get("callback_query")
         if not cq or "|" not in cq.get("data", ""):
             continue
@@ -117,4 +135,4 @@ def process(pending: dict, agencies: list[dict], offset: int, cfg: dict, log) ->
                 _mark(cq, f"✅ отправлено → {agency['email']}")
             else:
                 _answer(cq["id"], "Ошибка отправки — смотри логи Actions")
-    return new_offset
+    return new_offset, cmds

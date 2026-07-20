@@ -24,6 +24,19 @@ def log(msg: str) -> None:
     print(f"[fpv] {msg}", flush=True)
 
 
+def issue_lead(a: dict, cfg: dict, pending: dict) -> None:
+    """Обогатить агентство, сгенерировать КП и выслать карточку в Telegram."""
+    found = enrich.enrich(a, log)
+    for f in ("email", "phone", "tg", "wa"):
+        if found.get(f) and not a.get(f):
+            a[f] = found[f]
+    subject, body = kp.make(a, found.get("site_text", ""), cfg, log)
+    notify.send_lead(a, subject, body, pending, log,
+                     cfg["kp"].get("portfolio_url", ""))
+    a["status"] = "offered"
+    log(f"lead: {a['name']}")
+
+
 def main() -> None:
     cfg = tomllib.loads(
         (Path(__file__).parent / "config.toml").read_text(encoding="utf-8"))
@@ -42,8 +55,8 @@ def main() -> None:
         log("agencies.json пуст — заполни базу (см. README)")
         return
 
-    # 1. Кнопки: отправка КП / пропуск
-    state["offset"] = callbacks.process(
+    # 1. Кнопки: отправка КП / пропуск / команды меню
+    state["offset"], cmds = callbacks.process(
         pending, agencies, state.get("offset", 0), cfg, log)
 
     # 2. Входящие: ответы агентств → черновик Claude → карточка с кнопкой
@@ -78,22 +91,30 @@ def main() -> None:
                     "и запусти workflow Collect.", log)
                 state["base_empty_warned"] = today
         for a in batch:
-            found = enrich.enrich(a, log)
-            for f in ("email", "phone", "tg", "wa"):
-                if found.get(f) and not a.get(f):
-                    a[f] = found[f]
-            subject, body = kp.make(a, found.get("site_text", ""), cfg, log)
-            notify.send_lead(a, subject, body, pending, log,
-                             cfg["kp"].get("portfolio_url", ""))
-            a["status"] = "offered"
-            log(f"lead: {a['name']}")
+            issue_lead(a, cfg, pending)
         state["last_leads_date"] = today
         log(f"выдано лидов: {len(batch)}, осталось новых: {len(fresh) - len(batch)}")
+
+    # 4b. Внеочередные карточки по кнопке «📇 Прислать карточку»
+    extra = cmds.get("card", 0)
+    if extra:
+        fresh = [a for a in agencies if a.get("status", "new") == "new"]
+        if not fresh:
+            notify.send_service(
+                "📭 Новых агентств нет — нажми «🔄 Обновить базу»", log)
+        for a in fresh[:extra]:
+            issue_lead(a, cfg, pending)
 
     # 5. Состояние (workflow закоммитит data/ обратно)
     store.save("agencies.json", agencies)
     store.save("pending.json", pending)
     store.save("tg_state.json", state)
+
+    # 6. Обновление базы по кнопке «🔄 Обновить базу» (после сохранения:
+    # discover сам перечитает и дополнит agencies.json)
+    if cmds.get("discover"):
+        from scripts import discover as _discover
+        _discover.main()
 
 
 if __name__ == "__main__":

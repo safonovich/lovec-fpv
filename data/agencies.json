@@ -197,22 +197,22 @@
   "site": "https://homeway.su",
   "email": "inbox@homeway.su",
   "phone": "+7 499 4818888",
-  "tg": null,
+  "tg": "@Homewayestate",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
   "id": "moscowrealty",
   "name": "Московское агентство недвижимости",
   "site": "https://moscow-realty.ru",
-  "email": null,
+  "email": "moscow.realty.ru@gmail.com",
   "phone": null,
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

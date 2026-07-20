@@ -111,6 +111,7 @@ def process(pending: dict, agencies: list[dict], offset: int, cfg: dict, log):
             if ok:
                 _answer(cq["id"], "Ответ улетел 📤")
                 _mark(cq, f"✅ ответ отправлен → {info['to']}")
+                notify.send_service(f"✉️ Ответ отправлен → {info['to']}", log)
                 pending.pop(sk, None)
             else:
                 _answer(cq["id"], "Ошибка отправки — смотри логи Actions")
@@ -133,6 +134,12 @@ def process(pending: dict, agencies: list[dict], offset: int, cfg: dict, log):
                 agency["sent_ts"] = time.time()
                 _answer(cq["id"], "КП улетело 📧")
                 _mark(cq, f"✅ отправлено → {agency['email']}")
+                notify.send_service(
+                    f"✉️ Отправлено: КП для «{agency['name']}» → {agency['email']}\n"
+                    f"Копия — в «Отправленных» твоей почты.", log)
             else:
                 _answer(cq["id"], "Ошибка отправки — смотри логи Actions")
+                notify.send_service(
+                    f"⚠️ НЕ отправлено: «{agency['name']}» — ошибка почты, "
+                    f"детали в логах Actions.", log)
     return new_offset, cmds

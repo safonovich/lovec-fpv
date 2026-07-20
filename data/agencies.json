@@ -200,8 +200,8 @@
   "tg": "@Homewayestate",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1784544903.0679958
  },
  {
   "id": "moscowrealty",

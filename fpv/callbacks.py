@@ -61,8 +61,6 @@ def process(pending: dict, agencies: list[dict], offset: int, cfg: dict, log):
                 " нужен отдельный бот без webhook)")
             return offset, cmds
         updates = data.get("result", [])
-        log(f"callbacks: DEBUG offset={offset} → получено {len(updates)}; "
-            f"raw={str(data)[:400]}")
     except Exception as e:
         log(f"callbacks: getUpdates не сработал — {e}")
         return offset, cmds

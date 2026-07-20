@@ -16,7 +16,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from fpv import store
 
-OVERPASS = "https://overpass-api.de/api/interpreter"
+OVERPASS_MIRRORS = [
+    "https://overpass-api.de/api/interpreter",
+    "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "https://overpass.kumi.systems/api/interpreter",
+]
+UA = {"User-Agent": "lovec-fpv/1.0 (+https://github.com/safonovich/lovec-fpv)"}
 QUERY = """
 [out:json][timeout:120];
 area["ISO3166-2"="RU-MOW"][admin_level=4]->.msk;
@@ -48,12 +53,17 @@ def main() -> None:
     known_domains = {_domain(a.get("site", "")) for a in agencies} - {""}
     known_names = {a["name"].lower() for a in agencies}
 
-    try:
-        r = requests.post(OVERPASS, data={"data": QUERY}, timeout=180)
-        r.raise_for_status()
-        elements = r.json().get("elements", [])
-    except Exception as e:
-        log(f"Overpass не ответил — {e}")
+    elements = None
+    for mirror in OVERPASS_MIRRORS:
+        try:
+            r = requests.post(mirror, data={"data": QUERY}, headers=UA, timeout=180)
+            r.raise_for_status()
+            elements = r.json().get("elements", [])
+            break
+        except Exception as e:
+            log(f"Overpass ({mirror.split('/')[2]}) не ответил — {e}")
+    if elements is None:
+        log("все зеркала Overpass недоступны — попробуем в следующий раз")
         return
     log(f"OSM вернул объектов: {len(elements)}")
 

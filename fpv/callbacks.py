@@ -73,7 +73,7 @@ def process(pending: dict, agencies: list[dict], offset: int, cfg: dict, log):
         new_offset = max(new_offset, u["update_id"] + 1)
         msg = u.get("message")
         if msg:                                     # текстовые команды/кнопки меню
-            if str(msg.get("chat", {}).get("id", "")) != str(_chat_id()):
+            if str(msg.get("chat", {}).get("id", "")) != os.environ.get("TG_CHAT_ID", ""):
                 continue
             t = (msg.get("text") or "").strip().lower()
             if "карточк" in t or t.startswith("/card"):

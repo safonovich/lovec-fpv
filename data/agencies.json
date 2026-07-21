@@ -219,12 +219,12 @@
   "id": "sreal",
   "name": "Статус-Риэлти",
   "site": "http://sreal.ru",
-  "email": null,
+  "email": "support@beget.com",
   "phone": "+7 495 7904746",
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -236,7 +236,7 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -248,7 +248,7 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

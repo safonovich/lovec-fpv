@@ -270,11 +270,12 @@
   "site": "http://fsproperty.ru",
   "email": "fsp@fsproperty.ru",
   "phone": "+7 499 5831412",
-  "tg": null,
+  "tg": "@FS_PROPERTY_ELITE",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
-  "sent_ts": null
+  "status": "offered",
+  "sent_ts": null,
+  "wa": "+79168610317"
  },
  {
   "id": "uvegacity",
@@ -285,7 +286,7 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -297,7 +298,7 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

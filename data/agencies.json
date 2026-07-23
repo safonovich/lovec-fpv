@@ -310,7 +310,7 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -322,19 +322,19 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
   "id": "severniyokrug",
   "name": "Северный округ",
   "site": "https://severniy-okrug.ru",
-  "email": null,
+  "email": "5448594@mail.ru",
   "phone": "+7 499 9767812; +7 925 5448594",
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

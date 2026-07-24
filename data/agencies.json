@@ -202,7 +202,8 @@
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
   "status": "sent",
-  "sent_ts": 1784544903.0679958
+  "sent_ts": 1784544903.0679958,
+  "followup_ts": 1784894441.7755666
  },
  {
   "id": "moscowrealty",

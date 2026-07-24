@@ -5,6 +5,7 @@ LLM готовит черновик ответа — отправка ТОЛЬК
 from __future__ import annotations
 
 import email
+import email.header
 import email.utils
 import imaplib
 import json
@@ -149,7 +150,11 @@ def check(agencies: list[dict], pending: dict, last_uid: int, cfg: dict, log) ->
             continue
 
         incoming = _strip_quotes(_body_text(msg))
-        subj = msg.get("Subject", "")
+        try:    # =?utf-8?B?…?= → человеческий текст
+            subj = str(email.header.make_header(
+                email.header.decode_header(msg.get("Subject", ""))))
+        except Exception:
+            subj = msg.get("Subject", "")
         agency["status"] = "replied"
         log(f"inbox: ответ от {agency['name']} ({from_addr})")
 

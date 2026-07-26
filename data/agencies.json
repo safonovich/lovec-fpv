@@ -105,8 +105,9 @@
   "tg": "@Point_Estate",
   "district": "Москва",
   "note": "загородная элитка, Рублёвка | карточка выдавалась в чат старого бота (умер 23.07) — сброшено в new",
-  "status": "new",
-  "sent_ts": null
+  "status": "offered",
+  "sent_ts": null,
+  "wa": "+79262482054"
  },
  {
   "id": "ndv",
@@ -117,7 +118,7 @@
   "tg": "@ndv_supermarket",
   "district": "Москва",
   "note": "карточка выдавалась в чат старого бота (умер 23.07) — сброшено в new",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -129,7 +130,7 @@
   "tg": null,
   "district": "Москва",
   "note": "сайт блокирует зарубежные IP — контакты вписать вручную | карточка выдавалась в чат старого бота (умер 23.07) — сброшено в new",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

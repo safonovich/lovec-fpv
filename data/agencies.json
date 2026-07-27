@@ -142,7 +142,7 @@
   "tg": "@EtagiComSpace_Bot",
   "district": "Москва",
   "note": "федеральная сеть | карточка выдавалась в чат старого бота (умер 23.07) — сброшено в new",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -166,7 +166,7 @@
   "tg": "@ASKWELHOMEBOT",
   "district": "Москва",
   "note": "элитная городская и загородная | карточка выдавалась в чат старого бота (умер 23.07) — сброшено в new",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -178,8 +178,9 @@
   "tg": "@tweed_realtyy",
   "district": "Москва",
   "note": "элитка, клубные дома | карточка выдавалась в чат старого бота (умер 23.07) — сброшено в new",
-  "status": "new",
-  "sent_ts": null
+  "status": "offered",
+  "sent_ts": null,
+  "wa": "+79855652817"
  },
  {
   "id": "century21",

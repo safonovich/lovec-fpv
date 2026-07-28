@@ -6,10 +6,10 @@ lead_hour_msk    = 10        # порция дня выдаётся при пе�
 active_hours_msk = [9, 22]   # вне этих часов (МСК) запуск сразу выходит
 
 [kp]
-# ⚠️ Тестовый запуск на контактах SAF — перед передачей коллеге заменить телефон/почту
+# Телефон — Кирилла (28.07.2026). Почта пока SAF (safpelerin) — заменить при полной передаче
 portfolio_url = "https://safonovich.github.io/lovec-fpv/"
 author_name   = "WildProps"
-author_phone  = "+7 909 676-69-91"
+author_phone  = "+7 906 076-52-52"
 subject       = "WildProps — FPV-видеотур для объектов {agency}"
 
 # Форматы и цены — Claude выбирает 1-2 подходящих под агентство.

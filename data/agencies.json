@@ -351,19 +351,19 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
   "id": "kronamarket",
   "name": "Крона-Маркет",
   "site": "https://www.krona-market.ru",
-  "email": null,
+  "email": "reception@krona-market.ru",
   "phone": "+7 495 2313527",
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -375,7 +375,7 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

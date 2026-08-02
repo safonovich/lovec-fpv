@@ -919,5 +919,65 @@
   "note": "найдено автоматически (OSM)",
   "status": "new",
   "sent_ts": null
+ },
+ {
+  "id": "barnesmoscow",
+  "name": "Barnes",
+  "site": "https://barnes-moscow.com",
+  "email": "moscow@barnes-international.com",
+  "phone": "+7 499 2724872",
+  "tg": null,
+  "district": "Москва",
+  "note": "найдено автоматически (OSM)",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "id": "bestnovostroy",
+  "name": "БЕСТ-Новострой",
+  "site": "https://best-novostroy.ru",
+  "email": null,
+  "phone": "+7 (495) 126-39-00",
+  "tg": null,
+  "district": "Москва",
+  "note": "найдено автоматически (OSM)",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "id": "aindv",
+  "name": "АИН Девелопмент",
+  "site": "http://www.aindv.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "district": "Москва",
+  "note": "найдено автоматически (OSM)",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "id": "a101",
+  "name": "Офис продаж ЖК Прокшино",
+  "site": "https://a101.ru/projects/prokshino",
+  "email": null,
+  "phone": "+7 (495) 783-59-04",
+  "tg": null,
+  "district": "Москва",
+  "note": "найдено автоматически (OSM)",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "id": "villagiovip",
+  "name": "Villagio Estate",
+  "site": "http://villagio-vip.ru",
+  "email": "marketing@villagio.ru",
+  "phone": "+7 495 9740000;+7 495 6600919",
+  "tg": null,
+  "district": "Москва",
+  "note": "найдено автоматически (OSM)",
+  "status": "new",
+  "sent_ts": null
  }
 ]

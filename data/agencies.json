@@ -422,10 +422,10 @@
   "site": "https://best-comfort.ru",
   "email": "info@best-comfort.ru",
   "phone": "+7 495 1203614",
-  "tg": null,
+  "tg": "@best_comfort_ru",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -437,7 +437,7 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -449,7 +449,7 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

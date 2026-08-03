@@ -456,12 +456,12 @@
   "id": "thefive",
   "name": "The Five",
   "site": "https://thefive.ru",
-  "email": null,
+  "email": "press@thefive.ru",
   "phone": "+7 499 5888443",
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -473,7 +473,7 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -485,7 +485,7 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

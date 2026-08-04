@@ -497,31 +497,32 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
   "id": "mezonn",
   "name": "Мезон",
   "site": "https://mezonn.ru",
-  "email": null,
-  "phone": null,
-  "tg": null,
+  "email": "mezonn-office@mail.ru",
+  "phone": "+79154499863",
+  "tg": "@mezonrealestate",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
-  "sent_ts": null
+  "status": "offered",
+  "sent_ts": null,
+  "wa": "+79154499863"
  },
  {
   "id": "butovo",
   "name": "МЖК",
   "site": "http://butovo.ru",
   "email": null,
-  "phone": null,
-  "tg": null,
+  "phone": "+74957131081",
+  "tg": "@Domik_Dobryh_Del",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

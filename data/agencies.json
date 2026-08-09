@@ -673,25 +673,26 @@
   "id": "tsnnedv",
   "name": "Тсн Недвижимость",
   "site": "http://tsnnedv.ru",
-  "email": null,
+  "email": "info@tsnnedv.ru",
   "phone": "+7 495 5185000;+7 800 4505000",
-  "tg": null,
+  "tg": "@tsnnedv",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
   "id": "modestate",
   "name": "Mod",
   "site": "https://mod-estate.ru",
-  "email": null,
+  "email": "info@mod-estate.ru",
   "phone": "+7 926 5555077",
-  "tg": null,
+  "tg": "@ModRealEstate",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
-  "sent_ts": null
+  "status": "offered",
+  "sent_ts": null,
+  "wa": "+79265555077"
  },
  {
   "id": "msk",
@@ -702,7 +703,7 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

@@ -715,20 +715,21 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
   "id": "gjacip",
   "name": "ГЖА.рф",
   "site": "https://www.gjacip.ru",
-  "email": null,
+  "email": "info@cmprealty.com",
   "phone": "+7 983 1240911",
-  "tg": null,
+  "tg": "@CMPrealty",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
-  "sent_ts": null
+  "status": "offered",
+  "sent_ts": null,
+  "wa": "+76900400052"
  },
  {
   "id": "ogrkcenter",
@@ -739,8 +740,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
-  "sent_ts": null
+  "status": "offered",
+  "sent_ts": null,
+  "wa": "+79296876791"
  },
  {
   "id": "vysotskyx",

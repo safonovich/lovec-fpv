@@ -789,7 +789,7 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -801,19 +801,20 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
-  "sent_ts": null
+  "status": "offered",
+  "sent_ts": null,
+  "wa": "+79779676343"
  },
  {
   "id": "fsk",
   "name": "Настроение",
   "site": "https://fsk.ru/nastroenie",
-  "email": null,
+  "email": "info@anlider.info",
   "phone": "+7 495 4895679",
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

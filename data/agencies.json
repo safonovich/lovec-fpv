@@ -862,7 +862,7 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -870,12 +870,13 @@
   "name": "Юг Альянс Девелопмент",
   "site": "http://ugalliance.ru",
   "email": null,
-  "phone": null,
+  "phone": "+79161404641",
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
-  "sent_ts": null
+  "status": "offered",
+  "sent_ts": null,
+  "wa": "+79161404641"
  },
  {
   "id": "ayax",
@@ -886,7 +887,7 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

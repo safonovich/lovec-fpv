@@ -934,22 +934,22 @@
   "site": "https://barnes-moscow.com",
   "email": "moscow@barnes-international.com",
   "phone": "+7 499 2724872",
-  "tg": null,
+  "tg": "@art_de_vivre_barnes",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
   "id": "bestnovostroy",
   "name": "БЕСТ-Новострой",
   "site": "https://best-novostroy.ru",
-  "email": null,
+  "email": "rating@mail.ru",
   "phone": "+7 (495) 126-39-00",
-  "tg": null,
+  "tg": "@novostroykithebest",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -961,7 +961,7 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

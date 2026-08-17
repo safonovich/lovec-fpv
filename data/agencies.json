@@ -973,7 +973,7 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -982,10 +982,11 @@
   "site": "http://villagio-vip.ru",
   "email": "marketing@villagio.ru",
   "phone": "+7 495 9740000;+7 495 6600919",
-  "tg": null,
+  "tg": "@villagiovip_bot",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "new",
-  "sent_ts": null
+  "status": "offered",
+  "sent_ts": null,
+  "wa": "+74997536383"
  }
 ]

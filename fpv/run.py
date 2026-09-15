@@ -15,7 +15,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from fpv import callbacks, enrich, inbox, kp, mailer, notify, store
+from fpv import broadcast, callbacks, enrich, inbox, kp, mailer, notify, store
 
 MSK = zoneinfo.ZoneInfo("Europe/Moscow")
 
@@ -79,9 +79,29 @@ def main() -> None:
                     a["followup_ts"] = time.time()
                     notify.send_service(f"📮 Фоллоу-ап ушёл: {a['name']}", log)
 
-    # 4. Порция новых лидов — раз в день, после lead_hour_msk
     today = now.strftime("%Y-%m-%d")
-    if state.get("last_leads_date") != today and now.hour >= b.get("lead_hour_msk", 10):
+
+    # 3b. Массовая рассылка: превью → запуск → порция в день
+    if cmds.get("broadcast_stop"):
+        state["broadcast_on"] = False
+        log("broadcast: выключена")
+    if cmds.get("broadcast_preview"):
+        broadcast.preview(agencies, cfg, log)
+    if cmds.get("broadcast_start"):
+        state["broadcast_on"] = True
+        state["broadcast_date"] = today
+        broadcast.run_batch(agencies, cfg, log)
+    elif state.get("broadcast_on") and state.get("broadcast_date") != today:
+        state["broadcast_date"] = today
+        broadcast.run_batch(agencies, cfg, log)
+        if not broadcast.targets(agencies, cfg):
+            state["broadcast_on"] = False
+
+    # 4. Порция новых лидов — раз в день, после lead_hour_msk
+    # (во время кампании карточки не выдаём — те же агентства уже в рассылке)
+    if (not state.get("broadcast_on")
+            and state.get("last_leads_date") != today
+            and now.hour >= b.get("lead_hour_msk", 10)):
         fresh = [a for a in agencies if a.get("status", "new") == "new"]
         batch = fresh[:b.get("daily_leads", 3)]
         if not batch:

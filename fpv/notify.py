@@ -24,7 +24,9 @@ def short_key(agency_id: str) -> str:
 
 
 MENU_KB = {"keyboard": [[{"text": "📇 Прислать карточку"},
-                         {"text": "🔄 Обновить базу"}]],
+                         {"text": "🔄 Обновить базу"}],
+                        [{"text": "📨 Рассылка"},
+                         {"text": "⏹ Стоп рассылка"}]],
            "resize_keyboard": True, "is_persistent": True}
 
 

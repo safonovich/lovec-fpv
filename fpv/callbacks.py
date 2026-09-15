@@ -84,6 +84,14 @@ def process(pending: dict, agencies: list[dict], offset: int, cfg: dict, log):
                 cmds["discover"] = True
                 notify.send_menu("🔄 Принято — ищу новые агентства в OSM…", log)
                 log("menu: запрошено обновление базы")
+            elif "стоп рассылк" in t or t.startswith("/stopbroadcast"):
+                cmds["broadcast_stop"] = True
+                notify.send_menu("⏹ Рассылка остановлена.", log)
+                log("menu: стоп рассылки")
+            elif "рассылк" in t or t.startswith("/broadcast"):
+                cmds["broadcast_preview"] = True
+                notify.send_menu("📨 Готовлю превью рассылки…", log)
+                log("menu: запрошена рассылка")
             elif t.startswith("/start") or t.startswith("/menu"):
                 notify.send_menu("WildProps на связи. Кнопки меню снизу 👇", log)
             continue
@@ -91,6 +99,16 @@ def process(pending: dict, agencies: list[dict], offset: int, cfg: dict, log):
         if not cq or "|" not in cq.get("data", ""):
             continue
         action, sk = cq["data"].split("|", 1)
+        if action == "bcgo":                 # подтверждение запуска рассылки
+            cmds["broadcast_start"] = True
+            _answer(cq["id"], "Рассылка запущена 📨")
+            _mark(cq, "▶️ рассылка запущена")
+            log("broadcast: запуск подтверждён")
+            continue
+        if action == "bcno":
+            _answer(cq["id"], "Отменили")
+            _mark(cq, "✖️ рассылка отменена")
+            continue
         info = pending.get(sk)
         if action == "noop" or not info:
             if action != "noop":

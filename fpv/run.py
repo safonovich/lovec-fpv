@@ -87,11 +87,19 @@ def main() -> None:
         log("broadcast: выключена")
     if cmds.get("broadcast_preview"):
         broadcast.preview(agencies, cfg, log)
+    s0, s1 = cfg.get("broadcast", {}).get("send_hours", [10, 19])
+    can_send = s0 <= now.hour < s1          # холодные письма — только днём
     if cmds.get("broadcast_start"):
         state["broadcast_on"] = True
-        state["broadcast_date"] = today
-        broadcast.run_batch(agencies, cfg, log)
-    elif state.get("broadcast_on") and state.get("broadcast_date") != today:
+        if can_send:
+            state["broadcast_date"] = today
+            broadcast.run_batch(agencies, cfg, log)
+        else:
+            notify.send_service(
+                f"📨 Рассылка включена. Сейчас {now:%H:%M} МСК — письма "
+                f"уходят с {s0}:00 до {s1}:00, первая порция пойдёт утром.", log)
+    elif (state.get("broadcast_on") and can_send
+            and state.get("broadcast_date") != today):
         state["broadcast_date"] = today
         broadcast.run_batch(agencies, cfg, log)
         if not broadcast.targets(agencies, cfg):

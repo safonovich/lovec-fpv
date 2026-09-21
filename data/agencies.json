@@ -67,7 +67,7 @@
   "site": "https://whitewill.ru",
   "email": null,
   "phone": "+74952550161",
-  "tg": null,
+  "tg": "@whitewillestate",
   "district": "Москва",
   "note": "элитная недвижимость, активные в соцсетях | карточка выдавалась в чат старого бота (умер 23.07) — сброшено в new",
   "status": "offered",
@@ -541,13 +541,14 @@
   "id": "fortegroup",
   "name": "Forte Group",
   "site": "https://forte-group.ru",
-  "email": null,
+  "email": "info@forte-group.ru",
   "phone": "+7 495 7966776",
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
   "status": "offered",
-  "sent_ts": null
+  "sent_ts": null,
+  "wa": "+79857271979"
  },
  {
   "id": "dashkovrealty",

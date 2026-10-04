@@ -7,6 +7,8 @@
 from __future__ import annotations
 
 import datetime
+import json
+import os
 import sys
 import time
 import tomllib
@@ -37,6 +39,32 @@ def issue_lead(a: dict, cfg: dict, pending: dict) -> None:
     log(f"lead: {a['name']}")
 
 
+def webhook_updates() -> list[dict] | None:
+    """События, пришедшие снаружи.
+
+    Cloudflare-приёмник ловит нажатие в Telegram и тут же будит этот прогон
+    через repository_dispatch, передавая само событие. Тогда getUpdates не
+    нужен: Telegram уже отдал событие приёмнику и второй раз не отдаст.
+
+    Возвращает список событий, пустой список (webhook включён, но разбудило
+    расписание — опрашивать Telegram нельзя) или None (webhook не используется,
+    работаем по-старому, опросом).
+    """
+    path = os.environ.get("GITHUB_EVENT_PATH")
+    if not path or not Path(path).exists():
+        return None
+    try:
+        event = json.loads(Path(path).read_text(encoding="utf-8"))
+    except Exception:
+        return None
+    update = (event.get("client_payload") or {}).get("update")
+    if update:
+        return [update]
+    if os.environ.get("TG_WEBHOOK", "").strip().lower() in ("1", "true", "yes"):
+        return []
+    return None
+
+
 def main() -> None:
     cfg = tomllib.loads(
         (Path(__file__).parent / "config.toml").read_text(encoding="utf-8"))
@@ -57,7 +85,8 @@ def main() -> None:
 
     # 1. Кнопки: отправка КП / пропуск / команды меню
     state["offset"], cmds = callbacks.process(
-        pending, agencies, state.get("offset", 0), cfg, log)
+        pending, agencies, state.get("offset", 0), cfg, log,
+        injected=webhook_updates())
 
     # 2. Входящие: ответы агентств → черновик Claude → карточка с кнопкой
     if cfg.get("negotiation", {}).get("enabled", True):

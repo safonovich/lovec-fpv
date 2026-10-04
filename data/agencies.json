@@ -552,7 +552,7 @@
  },
  {
   "id": "dashkovrealty",
-  "name": "Агентство недвижимости",
+  "name": "Dashkovrealty",
   "site": "https://dashkovrealty.ru",
   "email": null,
   "phone": "+7 495 1285325",
@@ -1151,7 +1151,7 @@
   "sent_ts": null
  },
  {
-  "name": "ООО",
+  "name": "MSK",
   "site": "https://msk.allfirms.co",
   "email": null,
   "phone": null,
@@ -1161,7 +1161,7 @@
   "sent_ts": null
  },
  {
-  "name": "Контакты",
+  "name": "Avarealty",
   "site": "https://avarealty.ru",
   "email": null,
   "phone": null,
@@ -1221,7 +1221,7 @@
   "sent_ts": null
  },
  {
-  "name": "Елены Кузнецовой",
+  "name": "Ek Realestate",
   "site": "https://ek-realestate.ru",
   "email": null,
   "phone": null,

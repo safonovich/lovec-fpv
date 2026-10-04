@@ -125,6 +125,21 @@ def _strip_generic(name: str) -> str:
     return " ".join(words).strip(" .,:;-–—…")
 
 
+# Слова, которые остаются от шапки сайта и названием компании не являются.
+JUNK_NAMES = {
+    "ооо", "оао", "зао", "ип", "ao", "llc", "контакты", "контакт", "главная",
+    "о компании", "о нас", "главная страница", "каталог", "услуги", "недвижимость",
+    "агентство недвижимости", "агентство", "сайт", "домой", "home", "contacts",
+    "about", "menu", "меню", "новости", "вакансии",
+}
+
+
+def _name_is_junk(name: str) -> bool:
+    """«Контакты», «ООО», «Главная» — это не название компании."""
+    n = name.strip().lower().strip(".,:;«»\"'")
+    return n in JUNK_NAMES or len(n) < 3
+
+
 def clean_name(title: str, domain: str) -> str | None:
     """Из заголовка страницы сделать название компании.
 
@@ -140,7 +155,7 @@ def clean_name(title: str, domain: str) -> str | None:
         return None
 
     brand = _strip_generic(name)
-    if 2 < len(brand) <= 60 and len(brand.split()) <= 4:
+    if 2 < len(brand) <= 60 and len(brand.split()) <= 4 and not _name_is_junk(brand):
         return brand
 
     base = domain.split(".")[0].replace("-", " ")

@@ -1149,5 +1149,95 @@
   "note": "найдено поиском: продажа таунхаусов Подмосковье агентство",
   "status": "new",
   "sent_ts": null
+ },
+ {
+  "name": "ООО",
+  "site": "https://msk.allfirms.co",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Контакты",
+  "site": "https://avarealty.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Moskva Business",
+  "site": "https://moskva-business.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Agent112",
+  "site": "https://agent112.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Biznesarenda",
+  "site": "https://biznesarenda.ru",
+  "email": "realty@biznesarenda.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "⚡️Delight",
+  "site": "https://delight.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Choice Estate",
+  "site": "https://choice-estate.ru",
+  "email": "info@choice-estate.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство элитной недвижимости Москва",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Елены Кузнецовой",
+  "site": "https://ek-realestate.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство элитной недвижимости Москва",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Ehrealty",
+  "site": "https://ehrealty.ru",
+  "email": "info@ehrealty.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство элитной недвижимости Москва",
+  "status": "new",
+  "sent_ts": null
  }
 ]

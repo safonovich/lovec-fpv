@@ -1,7 +1,8 @@
 """Кнопки: забираем нажатия через getUpdates и выполняем действия.
 s|<sk> — отправить КП на email агентства, x|<sk> — пропустить.
 Плюс кнопки-меню: «📇 Прислать карточку» и «🔄 Обновить базу».
-У бота НЕ должен стоять webhook (боты из BotFather по умолчанию без него)."""
+Если стоит webhook, событие приходит снаружи и передаётся сюда параметром
+injected — тогда getUpdates не вызывается и webhook не снимается."""
 
 from __future__ import annotations
 
@@ -38,32 +39,38 @@ def _mark(cq: dict, label: str) -> None:
         pass
 
 
-def process(pending: dict, agencies: list[dict], offset: int, cfg: dict, log):
+def process(pending: dict, agencies: list[dict], offset: int, cfg: dict, log,
+            injected: list[dict] | None = None):
     """Возвращает (новый offset, команды меню). pending и agencies правятся на месте."""
     cmds: dict = {}
-    # Диагностика/самолечение: webhook блокирует getUpdates — снимаем его
-    try:
-        info = requests.get(_api("getWebhookInfo"), timeout=10).json().get("result", {})
-        if info.get("url"):
-            log(f"callbacks: ⚠️ на боте стоял webhook ({info['url'][:60]}…) — снимаю")
-            requests.get(_api("deleteWebhook"), timeout=10)
-        if info.get("pending_update_count"):
-            log(f"callbacks: в очереди Telegram {info['pending_update_count']} необработанных событий")
-    except Exception:
-        pass
-    try:
-        r = requests.get(_api("getUpdates"),
-                         params={"offset": offset, "timeout": 0}, timeout=25)
-        data = r.json()
-        if not data.get("ok"):
-            log(f"callbacks: Telegram отверг getUpdates — {data.get('description')}"
-                " (если тут ошибка 409/webhook — у бота настроен webhook,"
-                " нужен отдельный бот без webhook)")
+    # Событие пришло webhook-ом — Telegram его уже отдал, getUpdates не нужен.
+    if injected is not None:
+        updates = list(injected)
+        log(f"callbacks: {len(updates)} событий пришло webhook-ом")
+    else:
+        # Диагностика/самолечение: webhook блокирует getUpdates — снимаем его
+        try:
+            info = requests.get(_api("getWebhookInfo"), timeout=10).json().get("result", {})
+            if info.get("url"):
+                log(f"callbacks: ⚠️ на боте стоял webhook ({info['url'][:60]}…) — снимаю")
+                requests.get(_api("deleteWebhook"), timeout=10)
+            if info.get("pending_update_count"):
+                log(f"callbacks: в очереди Telegram {info['pending_update_count']} необработанных событий")
+        except Exception:
+            pass
+        try:
+            r = requests.get(_api("getUpdates"),
+                             params={"offset": offset, "timeout": 0}, timeout=25)
+            data = r.json()
+            if not data.get("ok"):
+                log(f"callbacks: Telegram отверг getUpdates — {data.get('description')}"
+                    " (если тут ошибка 409/webhook — у бота настроен webhook,"
+                    " нужен отдельный бот без webhook)")
+                return offset, cmds
+            updates = data.get("result", [])
+        except Exception as e:
+            log(f"callbacks: getUpdates не сработал — {e}")
             return offset, cmds
-        updates = data.get("result", [])
-    except Exception as e:
-        log(f"callbacks: getUpdates не сработал — {e}")
-        return offset, cmds
 
     if updates:
         log(f"callbacks: получено событий: {len(updates)}")

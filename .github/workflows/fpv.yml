@@ -33,7 +33,7 @@ jobs:
       - name: Запуск
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-          TG_WEBHOOK: 1          # событие приходит webhook-ом, Telegram не опрашиваем
+          TG_WEBHOOK: 0
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

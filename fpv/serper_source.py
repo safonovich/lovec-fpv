@@ -9,10 +9,10 @@
   1. берёт поисковые запросы из business.toml;
   2. спрашивает у Serper выдачу (по странице за раз, курсор крутится,
      чтобы не возвращать одно и то же);
-  3. выбрасывает агрегаторы, каталоги и соцсети — нужныт сайты самих компаний;
+  3. выбрасывает агрегаторы, каталоги и соцсети — нужны сайты самих компаний;
   4. заходит на сайт и снимает почту с главной и со страницы контактов.
 
-Клю�� — в переменной окружения SERPER_API_KEY (секрет репозитория).
+Ключ — в переменной окружения SERPER_API_KEY (секрет репозитория).
 Без ключа модуль молча возвращает пустой список: прогон не падает,
 остальные источники работают как работали.
 """
@@ -50,6 +50,21 @@ AGGREGATORS = (
     "tproger", "blogspot", "livejournal", "pinterest", "tiktok.com",
     "novostroy", "mskguru", "poselkino", "restate.ru", "move.ru",
     "the-village", "afisha.ru", "timepad.ru", "profi.ru", "youdo.com",
+    # СМИ, госсайты, отраслевые порталы и каталоги — это не компании-клиенты
+    "sostav.ru", "adindex", "mosreg.ru", "mos.ru", "gov.ru", "gosuslugi",
+    "kontur.ru", "1c.ru", "consultant.ru", "garant.ru", "interfax",
+    "avaho.ru", "cottage.ru", "zagorod.ru", "ydacha.ru", "poselki",
+    "domzamkad.ru", "estate-top", "mediakassir", "rgr.ru", "rgr4",
+    "vedomosti", "kommersant", "tass.ru", "ria.ru", "lenta.ru",
+    "banki.ru", "sravni.ru", "tbank.ru", "sberbank", "vtb.ru",
+    "xn--",                      # кириллические домены рейтингов и каталогов
+)
+
+# Заголовок статьи, а не название компании.
+ARTICLE_MARKERS = (
+    "рейтинг", "топ-", "топ ", "лучши", "каталог", "список", "отзыв",
+    "сравнени", "обзор", "как выбрать", "сколько стоит", "цены на",
+    "ваканси", "новости", "статьи", "блог", "форум", "википедия",
 )
 
 CONTACT_PATHS = ("", "/contacts", "/contacts/", "/kontakty", "/kontakty/",
@@ -68,11 +83,71 @@ def _is_company_site(url: str) -> bool:
     return not any(bad in d for bad in AGGREGATORS)
 
 
+def _looks_like_article(title: str) -> bool:
+    t = title.lower()
+    if any(m in t for m in ARTICLE_MARKERS):
+        return True
+    return bool(re.search(r"\b20[12]\d\b", t))      # «…в 2026 году»
+
+
+GENERIC_WORDS = {
+    "агентство", "агентства", "агентств", "недвижимость", "недвижимости",
+    "элитной", "элитная", "загородной", "загородная", "городской",
+    "москве", "москва", "московской", "области", "подмосковье", "подмосковья",
+    "в", "и", "по", "на", "от", "для", "продажа", "продаже", "аренда",
+    "аренде", "купить", "снять", "официальный", "сайт", "компания",
+    "компании", "строительная", "девелопер", "застройщик", "риелтор",
+    "риэлтор", "услуги", "центр", "бюро", "группа", "коттеджных",
+    "посёлков", "поселков", "домов", "квартир", "новостройки", "новостроек",
+}
+
+
+def _strip_generic(name: str) -> str:
+    """Срезать обобщающие слова с краёв, чтобы осталось имя бренда.
+
+    «Агентство элитной недвижимости в Москве Contact Real» → «Contact Real».
+    """
+    words = name.split()
+    while words and words[0].lower().strip(".,:;") in GENERIC_WORDS:
+        words.pop(0)
+    while words and words[-1].lower().strip(".,:;") in GENERIC_WORDS:
+        words.pop()
+    return " ".join(words).strip(" .,:;-–—…")
+
+
+def clean_name(title: str, domain: str) -> str | None:
+    """Из заголовка страницы сделать название компании.
+
+    Заголовки-статьи («Рейтинг лучших… 2026») отбрасываем целиком.
+    Из описательных вытаскиваем бренд; если не вышло — берём имя домена.
+    """
+    name = (title or "").strip()
+    for sep in ("|", "—", " - ", " – ", "::", " • ", ":"):
+        if sep in name:
+            name = name.split(sep)[0]
+    name = name.strip(" .,:;-–—…").strip()
+    if not name or _looks_like_article(name):
+        return None
+
+    brand = _strip_generic(name)
+    if 2 < len(brand) <= 60 and len(brand.split()) <= 4:
+        return brand
+
+    base = domain.split(".")[0].replace("-", " ")
+    if len(base) < 3:
+        return None
+    return (base.upper() if len(base) <= 4 else base.title())[:120]
+
+
 def _usable_email(email: str) -> bool:
     e = email.lower()
     if any(p in e for p in BAD_EMAIL_PARTS):
         return False
-    return len(e) < 70 and e.count("@") == 1
+    if len(e) >= 70 or e.count("@") != 1:
+        return False
+    tld = e.rsplit(".", 1)[-1]
+    # отсекает мусор вроде bootstrap@4.5.3, пойманный регуляркой из вёрстки
+    return tld.isalpha() and len(tld) >= 2
 
 
 def _pick_email(emails: list[str], domain: str) -> str | None:
@@ -146,7 +221,7 @@ def find_leads(limit: int, cfg: dict, log, state: dict | None = None,
     None — её потом добьёт Collect; дубли отсекает replenish.add_unique.
 
     `state` — любой словарь, который переживает прогоны (у нас tg_state).
-    В нём хранится курсор, чтобы каждый раз не перебирать одни 0 и те же
+    В нём хранится курсор, чтобы каждый раз не перебирать одни и те же
     страницы выдачи по одному и тому же запросу.
     """
     search_cfg = (cfg or {}).get("search", {})
@@ -189,9 +264,9 @@ def find_leads(limit: int, cfg: dict, log, state: dict | None = None,
                 continue
             seen_domains.add(domain)
 
-            name = (item.get("title") or "").split("|")[0].split("—")[0]
-            name = name.split(" - ")[0].strip()[:120]
-            if len(name) < 3:
+            name = clean_name(item.get("title") or "", domain)
+            if not name:
+                log(f"мимо (похоже на статью, не компанию): {item.get('title')}")
                 continue
 
             email = _contacts_from_site(link, log) if fetch_contacts else None

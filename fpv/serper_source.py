@@ -40,24 +40,32 @@ BAD_EMAIL_PARTS = (
 )
 
 # Не компании, а площадки: на них писать бессмысленно.
-AGGREGATORS = (
-    "cian.ru", "avito.ru", "domclick.ru", "2gis.ru", "2gis.com", "yandex.",
-    "ya.ru", "google.", "hh.ru", "zoon.ru", "yell.ru", "flamp.ru",
-    "rusprofile.ru", "list-org.com", "spark-interfax.ru", "sbis.ru",
-    "wikipedia.org", "youtube.com", "vk.com", "ok.ru", "t.me", "telegram",
-    "instagram.com", "facebook.com", "dzen.ru", "vc.ru", "habr.com",
-    "pikabu.ru", "irr.ru", "youla.ru", "kp.ru", "rbc.ru", "forbes.ru",
-    "tproger", "blogspot", "livejournal", "pinterest", "tiktok.com",
-    "novostroy", "mskguru", "poselkino", "restate.ru", "move.ru",
-    "the-village", "afisha.ru", "timepad.ru", "profi.ru", "youdo.com",
+# Сверка идёт по границе домена: "mos.ru" не должен задевать "laterra-mos.ru",
+# а "novostroy" — живое агентство best-novostroy.ru.
+BLOCK_DOMAINS = (
+    "cian.ru", "avito.ru", "domclick.ru", "2gis.ru", "2gis.com", "ya.ru",
+    "hh.ru", "zoon.ru", "yell.ru", "flamp.ru", "rusprofile.ru",
+    "list-org.com", "spark-interfax.ru", "sbis.ru", "youtube.com",
+    "vk.com", "ok.ru", "t.me", "dzen.ru", "vc.ru", "habr.com", "pikabu.ru",
+    "irr.ru", "youla.ru", "kp.ru", "rbc.ru", "forbes.ru", "tproger.ru",
+    "pinterest.com", "tiktok.com", "restate.ru", "move.ru", "afisha.ru",
+    "timepad.ru", "profi.ru", "youdo.com", "the-village.ru",
     # СМИ, госсайты, отраслевые порталы и каталоги — это не компании-клиенты
-    "sostav.ru", "adindex", "mosreg.ru", "mos.ru", "gov.ru", "gosuslugi",
-    "kontur.ru", "1c.ru", "consultant.ru", "garant.ru", "interfax",
-    "avaho.ru", "cottage.ru", "zagorod.ru", "ydacha.ru", "poselki",
-    "domzamkad.ru", "estate-top", "mediakassir", "rgr.ru", "rgr4",
-    "vedomosti", "kommersant", "tass.ru", "ria.ru", "lenta.ru",
-    "banki.ru", "sravni.ru", "tbank.ru", "sberbank", "vtb.ru",
+    "sostav.ru", "adindex.ru", "mosreg.ru", "mos.ru", "kontur.ru", "1c.ru",
+    "consultant.ru", "garant.ru", "interfax.ru", "avaho.ru", "cottage.ru",
+    "zagorod.ru", "ydacha.ru", "domzamkad.ru", "estate-top.ru", "rgr.ru",
+    "rgr42.ru", "mediakassir.ru", "mskguru.ru", "poselkino.ru",
+    "novostroy-m.ru", "vedomosti.ru", "kommersant.ru", "tass.ru", "ria.ru",
+    "lenta.ru", "banki.ru", "sravni.ru", "tbank.ru", "sberbank.ru",
+    "vtb.ru", "gosuslugi.ru",
+)
+
+# Куски, которые сами по себе однозначны: совпадение где угодно в домене.
+BLOCK_PARTS = (
+    "yandex.", "google.", "wikipedia.", "telegram.", "instagram.",
+    "facebook.", "blogspot.", "livejournal.",
     "xn--",                      # кириллические домены рейтингов и каталогов
+    ".gov.ru", "gov.ru",
 )
 
 # Заголовок статьи, а не название компании.
@@ -80,7 +88,9 @@ def _is_company_site(url: str) -> bool:
     d = _domain(url)
     if not d or "." not in d:
         return False
-    return not any(bad in d for bad in AGGREGATORS)
+    if any(part in d for part in BLOCK_PARTS):
+        return False
+    return not any(d == bad or d.endswith("." + bad) for bad in BLOCK_DOMAINS)
 
 
 def _looks_like_article(title: str) -> bool:

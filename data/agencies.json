@@ -1281,6 +1281,7 @@
   "sent_ts": null
  },
  {
+  "id": "msk3",
   "name": "MSK",
   "site": "https://msk.spravker.ru",
   "email": "support@spravker.ru",
@@ -1291,6 +1292,7 @@
   "sent_ts": null
  },
  {
+  "id": "arealty",
   "name": "A Realty",
   "site": "https://a-realty.ru",
   "email": "b@a-realty.ru",
@@ -1301,6 +1303,7 @@
   "sent_ts": null
  },
  {
+  "id": "spravlist",
   "name": "Дунаевского улица",
   "site": "https://spravlist.ru",
   "email": null,
@@ -1311,6 +1314,7 @@
   "sent_ts": null
  },
  {
+  "id": "firmap",
   "name": "адреса и телефоны",
   "site": "https://firmap.ru",
   "email": null,
@@ -1321,6 +1325,7 @@
   "sent_ts": null
  },
  {
+  "id": "msk4",
   "name": "MSK",
   "site": "https://msk.ofirm.co",
   "email": null,
@@ -1331,6 +1336,7 @@
   "sent_ts": null
  },
  {
+  "id": "urbanplaces",
   "name": "Где",
   "site": "https://urbanplaces.su",
   "email": null,
@@ -1341,6 +1347,7 @@
   "sent_ts": null
  },
  {
+  "id": "moskva",
   "name": "карте Москвы",
   "site": "https://moskva.kitabi.ru",
   "email": null,
@@ -1351,6 +1358,7 @@
   "sent_ts": null
  },
  {
+  "id": "kudamsk",
   "name": "адреса",
   "site": "https://kudamsk.ru",
   "email": null,
@@ -1361,6 +1369,7 @@
   "sent_ts": null
  },
  {
+  "id": "homehunter",
   "name": "Москвы",
   "site": "https://homehunter.ru",
   "email": "support@homehunter.ru",
@@ -1371,6 +1380,7 @@
   "sent_ts": null
  },
  {
+  "id": "orgpage",
   "name": "Риэлторские",
   "site": "https://orgpage.ru",
   "email": null,
@@ -1381,6 +1391,7 @@
   "sent_ts": null
  },
  {
+  "id": "irn",
   "name": "IRN",
   "site": "https://irn.ru",
   "email": "pr@irn.ru",
@@ -1391,6 +1402,7 @@
   "sent_ts": null
  },
  {
+  "id": "nedvipro",
   "name": "https",
   "site": "https://nedvipro.ru",
   "email": "pent@haus.ru",
@@ -1401,6 +1413,7 @@
   "sent_ts": null
  },
  {
+  "id": "redlinerealty",
   "name": "Redlinerealty",
   "site": "https://redlinerealty.ru",
   "email": null,
@@ -1411,6 +1424,7 @@
   "sent_ts": null
  },
  {
+  "id": "nland",
   "name": "Московская область",
   "site": "https://n-land.ru",
   "email": "sale@n-land.ru",
@@ -1421,6 +1435,7 @@
   "sent_ts": null
  },
  {
+  "id": "rodnojdom",
   "name": "Родной Дом",
   "site": "https://rodnoj-dom.ru",
   "email": "info@rodnoj-dom.ru",
@@ -1431,6 +1446,7 @@
   "sent_ts": null
  },
  {
+  "id": "kppodol",
   "name": "Коттеджный поселок «ПОДОЛЬЕ»",
   "site": "https://kp-podol.ru",
   "email": null,

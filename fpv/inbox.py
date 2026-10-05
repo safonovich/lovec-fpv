@@ -29,6 +29,8 @@ SYSTEM = """Ты — ассистент студии {author} (FPV-съёмка 
 - цены ТОЛЬКО из прайса, новые не выдумывай:
 {prices}
 - оплата: {payment}
+- если просят примеры работ или портфолио — дай эту ссылку и никакую другую,
+  и не вставляй вместо неё заглушку: {portfolio}
 - скидки не предлагай, даты съёмок не обещай («согласуем дату — под ваш объект найдём слот»)
 - криптовалюту не упоминай
 - рост продаж не обещай, кейсы и цифры не выдумывай
@@ -100,7 +102,8 @@ def _draft(agency: dict, incoming: str, cfg: dict, log):
     system = SYSTEM.format(author=kp_cfg["author_name"],
                            phone=kp_cfg["author_phone"],
                            prices=kp_cfg.get("prices", ""),
-                           payment=kp_cfg.get("payment", ""))
+                           payment=kp_cfg.get("payment", ""),
+                           portfolio=kp_cfg.get("portfolio_url", ""))
     user = (f"Агентство: {agency['name']}\n"
             f"Их письмо:\n{incoming}")
     txt = llm.chat(system, user, cfg, log, max_tokens=600)

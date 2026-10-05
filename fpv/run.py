@@ -70,9 +70,12 @@ def main() -> None:
         (Path(__file__).parent / "config.toml").read_text(encoding="utf-8"))
     b = cfg["bot"]
 
+    # Событие от приёмника обрабатываем в любое время: человек нажал кнопку
+    # и ждёт ответа, а не «бот спит до девяти».
+    injected = webhook_updates()
     now = datetime.datetime.now(MSK)
     h0, h1 = b.get("active_hours_msk", [9, 22])
-    if not (h0 <= now.hour < h1):
+    if not (h0 <= now.hour < h1) and not injected:
         log(f"вне рабочих часов ({now:%H:%M} МСК) — спим")
         return
 
@@ -86,7 +89,7 @@ def main() -> None:
     # 1. Кнопки: отправка КП / пропуск / команды меню
     state["offset"], cmds = callbacks.process(
         pending, agencies, state.get("offset", 0), cfg, log,
-        injected=webhook_updates())
+        injected=injected)
 
     # 2. Входящие: ответы агентств → черновик Claude → карточка с кнопкой
     if cfg.get("negotiation", {}).get("enabled", True):

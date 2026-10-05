@@ -21,8 +21,9 @@
   "tg": "@incom_estate_mos",
   "district": "Москва",
   "note": "одно из крупнейших, много загородки | карточка выдавалась в чат старого бота (умер 23.07) — сброшено в new",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791180434.3939774,
+  "broadcast_ts": 1791180434.3939784
  },
  {
   "id": "miel",
@@ -94,8 +95,9 @@
   "tg": null,
   "district": "Москва",
   "note": "экс-Savills, элитка | карточка выдавалась в чат старого бота (умер 23.07) — сброшено в new",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791180480.9962873,
+  "broadcast_ts": 1791180480.996289
  },
  {
   "id": "pointestate",
@@ -106,9 +108,10 @@
   "tg": "@Point_Estate",
   "district": "Москва",
   "note": "загородная элитка, Рублёвка | карточка выдавалась в чат старого бота (умер 23.07) — сброшено в new",
-  "status": "offered",
-  "sent_ts": null,
-  "wa": "+79262482054"
+  "status": "sent",
+  "sent_ts": 1791180527.660717,
+  "wa": "+79262482054",
+  "broadcast_ts": 1791180527.660718
  },
  {
   "id": "ndv",
@@ -119,8 +122,9 @@
   "tg": "@ndv_supermarket",
   "district": "Москва",
   "note": "карточка выдавалась в чат старого бота (умер 23.07) — сброшено в new",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791180574.7382562,
+  "broadcast_ts": 1791180574.7382572
  },
  {
   "id": "azbuka",
@@ -220,8 +224,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM) | карточка выдавалась в чат старого бота (умер 23.07) — сброшено в new",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791180621.5020387,
+  "broadcast_ts": 1791180621.5020409
  },
  {
   "id": "sreal",
@@ -280,9 +285,10 @@
   "tg": "@FS_PROPERTY_ELITE",
   "district": "Москва",
   "note": "найдено автоматически (OSM) | карточка выдавалась в чат старого бота (умер 23.07) — сброшено в new",
-  "status": "offered",
-  "sent_ts": null,
-  "wa": "+79168610317"
+  "status": "sent",
+  "sent_ts": 1791180669.423395,
+  "wa": "+79168610317",
+  "broadcast_ts": 1791180669.4233956
  },
  {
   "id": "uvegacity",
@@ -293,8 +299,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM) | карточка выдавалась в чат старого бота (умер 23.07) — сброшено в new",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791180715.8666918,
+  "broadcast_ts": 1791180715.8666928
  },
  {
   "id": "osm5f7d321e",
@@ -305,8 +312,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM) | карточка выдавалась в чат старого бота (умер 23.07) — сброшено в new",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791180762.4252815,
+  "broadcast_ts": 1791180762.425283
  },
  {
   "id": "osmcb905ea8",
@@ -317,8 +325,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM) | карточка выдавалась в чат старого бота (умер 23.07) — сброшено в new",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791180808.897309,
+  "broadcast_ts": 1791180808.8973103
  },
  {
   "id": "konexpert",
@@ -341,8 +350,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM) | карточка выдавалась в чат старого бота (умер 23.07) — сброшено в new",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791180855.6717865,
+  "broadcast_ts": 1791180855.6717875
  },
  {
   "id": "capitalinvest",
@@ -353,8 +363,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791180902.5043015,
+  "broadcast_ts": 1791180902.5043032
  },
  {
   "id": "kronamarket",
@@ -365,8 +376,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791180948.9217813,
+  "broadcast_ts": 1791180948.9217825
  },
  {
   "id": "barklimd",
@@ -377,8 +389,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791180995.793351,
+  "broadcast_ts": 1791180995.7933517
  },
  {
   "id": "kvartal",
@@ -389,8 +402,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791181042.2838356,
+  "broadcast_ts": 1791181042.2838368
  },
  {
   "id": "newflat",
@@ -413,8 +427,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791181088.8711438,
+  "broadcast_ts": 1791181088.8711452
  },
  {
   "id": "bestcomfort",

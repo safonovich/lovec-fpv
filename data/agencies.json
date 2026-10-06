@@ -1571,6 +1571,7 @@
   "sent_ts": null
  },
  {
+  "id": "moskva1",
   "name": "Moskva1",
   "site": "https://moskva1.jsprav.ru",
   "email": null,
@@ -1581,6 +1582,7 @@
   "sent_ts": null
  },
  {
+  "id": "moscow",
   "name": "Moscow",
   "site": "https://moscow.spravkarf.ru",
   "email": null,

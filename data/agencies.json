@@ -1470,5 +1470,95 @@
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
   "status": "new",
   "sent_ts": null
+ },
+ {
+  "name": "\"Адресъ-недвижимость\"",
+  "site": "https://adres-realty.ru",
+  "email": "info@adres-realty.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Beyond",
+  "site": "https://beyond.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство элитной недвижимости Москва",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Новая Рига",
+  "site": "https://rublevka-road.ru",
+  "email": "info@rublevka-road.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: риелтор Новая Рига Рублёвка продажа домов",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Prime",
+  "site": "https://prime.su",
+  "email": "info@prime.su",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Владис",
+  "site": "https://vladis.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Barn Estate",
+  "site": "https://barn-estate.ru",
+  "email": "moscow@barn-estate.com",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство элитной недвижимости Москва",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Покупка",
+  "site": "https://rimarcom.ru",
+  "email": "info@rimarcom.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "коммерческой",
+  "site": "https://m2data.net",
+  "email": "sales@m2data.net",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "риэлторы",
+  "site": "https://moscowmap.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null
  }
 ]

@@ -440,8 +440,9 @@
   "tg": "@best_comfort_ru",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791289765.5289671,
+  "broadcast_ts": 1791289765.5289688
  },
  {
   "id": "kotelnicheskaya21",
@@ -464,8 +465,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791289811.9226515,
+  "broadcast_ts": 1791289811.922653
  },
  {
   "id": "thefive",
@@ -476,8 +478,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791289858.9140842,
+  "broadcast_ts": 1791289858.9140851
  },
  {
   "id": "terrasunspain",
@@ -524,9 +527,10 @@
   "tg": "@mezonrealestate",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null,
-  "wa": "+79154499863"
+  "status": "sent",
+  "sent_ts": 1791289905.753781,
+  "wa": "+79154499863",
+  "broadcast_ts": 1791289905.753782
  },
  {
   "id": "butovo",
@@ -561,9 +565,10 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null,
-  "wa": "+79857271979"
+  "status": "sent",
+  "sent_ts": 1791289952.15081,
+  "wa": "+79857271979",
+  "broadcast_ts": 1791289952.150811
  },
  {
   "id": "dashkovrealty",
@@ -586,8 +591,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791289998.6614592,
+  "broadcast_ts": 1791289998.661464
  },
  {
   "id": "headway",
@@ -598,8 +604,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791290045.3508346,
+  "broadcast_ts": 1791290045.3508358
  },
  {
   "id": "osm79da466a",
@@ -610,8 +617,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791290091.7402008,
+  "broadcast_ts": 1791290091.7402017
  },
  {
   "id": "realtor",
@@ -622,8 +630,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791290138.1373749,
+  "broadcast_ts": 1791290138.137376
  },
  {
   "id": "skndom",
@@ -634,8 +643,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791290184.5575807,
+  "broadcast_ts": 1791290184.5575817
  },
  {
   "id": "samoletplus",
@@ -646,8 +656,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791290230.987404,
+  "broadcast_ts": 1791290230.987405
  },
  {
   "id": "prioritet",
@@ -694,8 +705,9 @@
   "tg": "@tsnnedv",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791290277.4058316,
+  "broadcast_ts": 1791290277.4058328
  },
  {
   "id": "modestate",
@@ -706,9 +718,10 @@
   "tg": "@ModRealEstate",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null,
-  "wa": "+79265555077"
+  "status": "sent",
+  "sent_ts": 1791290324.9067056,
+  "wa": "+79265555077",
+  "broadcast_ts": 1791290324.906707
  },
  {
   "id": "msk",
@@ -719,8 +732,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791290371.3234115,
+  "broadcast_ts": 1791290371.3234165
  },
  {
   "id": "komnatastudia",
@@ -731,8 +745,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791290418.1364248,
+  "broadcast_ts": 1791290418.1364257
  },
  {
   "id": "gjacip",

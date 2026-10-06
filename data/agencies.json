@@ -1472,6 +1472,7 @@
   "sent_ts": null
  },
  {
+  "id": "adresrealty",
   "name": "\"Адресъ-недвижимость\"",
   "site": "https://adres-realty.ru",
   "email": "info@adres-realty.ru",
@@ -1482,6 +1483,7 @@
   "sent_ts": null
  },
  {
+  "id": "beyond",
   "name": "Beyond",
   "site": "https://beyond.ru",
   "email": null,
@@ -1492,6 +1494,7 @@
   "sent_ts": null
  },
  {
+  "id": "rublevkaroad",
   "name": "Новая Рига",
   "site": "https://rublevka-road.ru",
   "email": "info@rublevka-road.ru",
@@ -1502,6 +1505,7 @@
   "sent_ts": null
  },
  {
+  "id": "prime",
   "name": "Prime",
   "site": "https://prime.su",
   "email": "info@prime.su",
@@ -1512,6 +1516,7 @@
   "sent_ts": null
  },
  {
+  "id": "vladis",
   "name": "Владис",
   "site": "https://vladis.ru",
   "email": null,
@@ -1522,6 +1527,7 @@
   "sent_ts": null
  },
  {
+  "id": "barnestate",
   "name": "Barn Estate",
   "site": "https://barn-estate.ru",
   "email": "moscow@barn-estate.com",
@@ -1532,6 +1538,7 @@
   "sent_ts": null
  },
  {
+  "id": "rimarcom",
   "name": "Покупка",
   "site": "https://rimarcom.ru",
   "email": "info@rimarcom.ru",
@@ -1542,6 +1549,7 @@
   "sent_ts": null
  },
  {
+  "id": "m2data",
   "name": "коммерческой",
   "site": "https://m2data.net",
   "email": "sales@m2data.net",
@@ -1552,6 +1560,7 @@
   "sent_ts": null
  },
  {
+  "id": "moscowmap",
   "name": "риэлторы",
   "site": "https://moscowmap.ru",
   "email": null,

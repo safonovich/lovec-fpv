@@ -758,9 +758,10 @@
   "tg": "@CMPrealty",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null,
-  "wa": "+76900400052"
+  "status": "sent",
+  "sent_ts": 1791375758.1749103,
+  "wa": "+76900400052",
+  "broadcast_ts": 1791375758.1749115
  },
  {
   "id": "ogrkcenter",
@@ -771,9 +772,10 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null,
-  "wa": "+79296876791"
+  "status": "sent",
+  "sent_ts": 1791375804.9451988,
+  "wa": "+79296876791",
+  "broadcast_ts": 1791375804.9452002
  },
  {
   "id": "vysotskyx",
@@ -784,8 +786,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791375855.7943141,
+  "broadcast_ts": 1791375855.7943156
  },
  {
   "id": "an",
@@ -796,8 +799,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791375902.0376627,
+  "broadcast_ts": 1791375902.0376637
  },
  {
   "id": "anlasvegas",
@@ -832,9 +836,10 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null,
-  "wa": "+79779676343"
+  "status": "sent",
+  "sent_ts": 1791375948.3276281,
+  "wa": "+79779676343",
+  "broadcast_ts": 1791375948.3276293
  },
  {
   "id": "fsk",
@@ -845,8 +850,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791375994.6534772,
+  "broadcast_ts": 1791375994.6534786
  },
  {
   "id": "b2bfsk",
@@ -857,8 +863,9 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791376041.6643867,
+  "broadcast_ts": 1791376041.664388
  },
  {
   "id": "dsk1",
@@ -881,8 +888,9 @@
   "tg": "@Viktor0806",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791376090.3643637,
+  "broadcast_ts": 1791376090.364365
  },
  {
   "id": "samolet",
@@ -930,8 +938,9 @@
   "tg": "@group_etalon",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791376137.4106653,
+  "broadcast_ts": 1791376137.4106665
  },
  {
   "id": "anwin",
@@ -942,9 +951,10 @@
   "tg": "@anwin_ru",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null,
-  "wa": "+79031301802"
+  "status": "sent",
+  "sent_ts": 1791376183.6313703,
+  "wa": "+79031301802",
+  "broadcast_ts": 1791376183.631371
  },
  {
   "id": "suvarna",
@@ -955,9 +965,10 @@
   "tg": "@galleryrealestatethailand",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null,
-  "wa": "+76911922111"
+  "status": "sent",
+  "sent_ts": 1791376229.9664288,
+  "wa": "+76911922111",
+  "broadcast_ts": 1791376229.96643
  },
  {
   "id": "barnesmoscow",
@@ -968,8 +979,9 @@
   "tg": "@art_de_vivre_barnes",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791376276.6460226,
+  "broadcast_ts": 1791376276.6460238
  },
  {
   "id": "bestnovostroy",
@@ -980,8 +992,9 @@
   "tg": "@novostroykithebest",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791376323.129018,
+  "broadcast_ts": 1791376323.1290195
  },
  {
   "id": "aindv",
@@ -1016,9 +1029,10 @@
   "tg": "@villagiovip_bot",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null,
-  "wa": "+74997536383"
+  "status": "sent",
+  "sent_ts": 1791376369.4195993,
+  "wa": "+74997536383",
+  "broadcast_ts": 1791376369.4196007
  },
  {
   "id": "premium",
@@ -1028,8 +1042,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791376415.7049937,
+  "broadcast_ts": 1791376415.704995
  },
  {
   "id": "ashtons",

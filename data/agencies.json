@@ -1716,5 +1716,25 @@
   "note": "найдено поиском: агентство элитной недвижимости Москва",
   "status": "new",
   "sent_ts": null
+ },
+ {
+  "name": "элитных",
+  "site": "https://reapple.ru",
+  "email": "moscow@applerealestate.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство элитной недвижимости Москва",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Elitnoe",
+  "site": "https://elitnoe.ru",
+  "email": "ask@elitnoe.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство элитной недвижимости Москва",
+  "status": "new",
+  "sent_ts": null
  }
 ]

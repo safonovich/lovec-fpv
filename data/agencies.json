@@ -1606,5 +1606,105 @@
   "note": "найдено поиском: агентство недвижимости Москва контакты",
   "status": "new",
   "sent_ts": null
+ },
+ {
+  "name": "Poisk Novostroyki",
+  "site": "https://poisk-novostroyki.ru",
+  "email": "info@poisk-novostroyki.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "MSK",
+  "site": "https://msk.ruspravochnik.com",
+  "email": "online@ruspravochnik.com",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство элитной недвижимости Москва",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Domus",
+  "site": "https://domusned.ru",
+  "email": "mail@domusned.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Garda Estate",
+  "site": "https://garda-estate.ru",
+  "email": "info@garda-estate.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Коттеджные поселки",
+  "site": "https://zemlyamo.ru",
+  "email": "info@zemlyamo.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Goodstone",
+  "site": "https://goodstone.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "People",
+  "site": "https://peoplestate.ru",
+  "email": "site@peoplestate.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство элитной недвижимости Москва",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "МАН",
+  "site": "https://man.msk.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Premium Realty",
+  "site": "https://premium-realty.ru",
+  "email": "info@premium-realty.com",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство элитной недвижимости Москва",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Элитное жилье",
+  "site": "https://vgrealty.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство элитной недвижимости Москва",
+  "status": "new",
+  "sent_ts": null
  }
 ]

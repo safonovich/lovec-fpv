@@ -1718,6 +1718,7 @@
   "sent_ts": null
  },
  {
+  "id": "reapple",
   "name": "элитных",
   "site": "https://reapple.ru",
   "email": "moscow@applerealestate.ru",
@@ -1728,6 +1729,7 @@
   "sent_ts": null
  },
  {
+  "id": "elitnoe",
   "name": "Elitnoe",
   "site": "https://elitnoe.ru",
   "email": "ask@elitnoe.ru",

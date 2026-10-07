@@ -1608,6 +1608,7 @@
   "sent_ts": null
  },
  {
+  "id": "poisknovostroyki",
   "name": "Poisk Novostroyki",
   "site": "https://poisk-novostroyki.ru",
   "email": "info@poisk-novostroyki.ru",
@@ -1618,6 +1619,7 @@
   "sent_ts": null
  },
  {
+  "id": "msk5",
   "name": "MSK",
   "site": "https://msk.ruspravochnik.com",
   "email": "online@ruspravochnik.com",
@@ -1628,6 +1630,7 @@
   "sent_ts": null
  },
  {
+  "id": "domusned",
   "name": "Domus",
   "site": "https://domusned.ru",
   "email": "mail@domusned.ru",
@@ -1638,6 +1641,7 @@
   "sent_ts": null
  },
  {
+  "id": "gardaestate",
   "name": "Garda Estate",
   "site": "https://garda-estate.ru",
   "email": "info@garda-estate.ru",
@@ -1648,6 +1652,7 @@
   "sent_ts": null
  },
  {
+  "id": "zemlyamo",
   "name": "Коттеджные поселки",
   "site": "https://zemlyamo.ru",
   "email": "info@zemlyamo.ru",
@@ -1658,6 +1663,7 @@
   "sent_ts": null
  },
  {
+  "id": "goodstone",
   "name": "Goodstone",
   "site": "https://goodstone.ru",
   "email": null,
@@ -1668,6 +1674,7 @@
   "sent_ts": null
  },
  {
+  "id": "peoplestate",
   "name": "People",
   "site": "https://peoplestate.ru",
   "email": "site@peoplestate.ru",
@@ -1678,6 +1685,7 @@
   "sent_ts": null
  },
  {
+  "id": "man",
   "name": "МАН",
   "site": "https://man.msk.ru",
   "email": null,
@@ -1688,6 +1696,7 @@
   "sent_ts": null
  },
  {
+  "id": "premiumrealty",
   "name": "Premium Realty",
   "site": "https://premium-realty.ru",
   "email": "info@premium-realty.com",
@@ -1698,6 +1707,7 @@
   "sent_ts": null
  },
  {
+  "id": "vgrealty",
   "name": "Элитное жилье",
   "site": "https://vgrealty.ru",
   "email": null,

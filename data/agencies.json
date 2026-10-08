@@ -876,8 +876,9 @@
   "tg": "@pervyidsk",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "offered",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791462731.0877724,
+  "broadcast_ts": 1791462731.087774
  },
  {
   "id": "svd",
@@ -1054,8 +1055,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791462777.860209,
+  "broadcast_ts": 1791462777.86021
  },
  {
   "id": "kre",
@@ -1065,8 +1067,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791462826.9029696,
+  "broadcast_ts": 1791462826.9029708
  },
  {
   "id": "letoestate",
@@ -1076,8 +1079,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791462873.479146,
+  "broadcast_ts": 1791462873.4791474
  },
  {
   "id": "oneestate",
@@ -1109,8 +1113,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791462919.9107933,
+  "broadcast_ts": 1791462919.9107947
  },
  {
   "id": "brightestate",
@@ -1131,8 +1136,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791462967.6233773,
+  "broadcast_ts": 1791462967.6233785
  },
  {
   "id": "noco",
@@ -1142,8 +1148,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791463014.5089812,
+  "broadcast_ts": 1791463014.5089824
  },
  {
   "id": "vescorealty",
@@ -1164,8 +1171,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: риелтор Новая Рига Рублёвка продажа домов",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791463062.130781,
+  "broadcast_ts": 1791463062.1307824
  },
  {
   "id": "lsr",
@@ -1186,8 +1194,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: продажа таунхаусов Подмосковье агентство",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791463109.7458687,
+  "broadcast_ts": 1791463109.74587
  },
  {
   "id": "moskovskayaoblast",
@@ -1197,8 +1206,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: продажа таунхаусов Подмосковье агентство",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791463157.4598908,
+  "broadcast_ts": 1791463157.459892
  },
  {
   "id": "soulestate",
@@ -1208,8 +1218,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: продажа таунхаусов Подмосковье агентство",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791463205.0401835,
+  "broadcast_ts": 1791463205.0401847
  },
  {
   "id": "msk2",
@@ -1263,8 +1274,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791463254.7888963,
+  "broadcast_ts": 1791463254.7888973
  },
  {
   "id": "delight",
@@ -1285,8 +1297,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791463301.7794995,
+  "broadcast_ts": 1791463301.7795007
  },
  {
   "id": "ekrealestate",
@@ -1307,8 +1320,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791463347.9282217,
+  "broadcast_ts": 1791463347.9282227
  },
  {
   "id": "msk3",
@@ -1318,8 +1332,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791463394.6399047,
+  "broadcast_ts": 1791463394.639906
  },
  {
   "id": "arealty",

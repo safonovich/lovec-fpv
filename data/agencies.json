@@ -1753,5 +1753,115 @@
   "note": "найдено поиском: агентство элитной недвижимости Москва",
   "status": "new",
   "sent_ts": null
+ },
+ {
+  "name": "Девелоперы и застройщики",
+  "site": "https://novomoscow.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Застройщики",
+  "site": "https://nicstroy.ru",
+  "email": "manager@nicstroy.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Подмосковные Земли",
+  "site": "https://novostroikino.ru",
+  "email": "info@novostroikino.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Рублёво-Успенском шоссе",
+  "site": "https://rublevka.pro",
+  "email": "hello@rublevka.pro",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: риелтор Новая Рига Рублёвка продажа домов",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Alleyadom",
+  "site": "https://alleyadom.ru",
+  "email": "info@alleyadom.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "SSRR",
+  "site": "https://ssrr.ru",
+  "email": "office@ssrr.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Stapler Estate",
+  "site": "https://staplere.com",
+  "email": "info@staplere.com",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство элитной недвижимости Москва",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Deltaestate",
+  "site": "https://deltaestate.ru",
+  "email": "info@deltaestate.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство элитной недвижимости Москва",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Respekt An",
+  "site": "https://respekt-an.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Ваш дом",
+  "site": "https://agentstvo-zagorodnoy.orgs.biz",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "ANTB",
+  "site": "https://antb.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
+  "status": "new",
+  "sent_ts": null
  }
 ]

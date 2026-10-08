@@ -1874,5 +1874,45 @@
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
   "status": "new",
   "sent_ts": null
+ },
+ {
+  "name": "Ab Realty",
+  "site": "https://ab-realty.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "3584",
+  "site": "https://mestas.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "An Rus",
+  "site": "https://an-rus.ru",
+  "email": "24@an-rus.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null
+ },
+ {
+  "name": "Cottage",
+  "site": "https://cottage.center",
+  "email": "info@cottage.center",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
+  "status": "new",
+  "sent_ts": null
  }
 ]

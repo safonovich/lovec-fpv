@@ -2050,5 +2050,126 @@
   "status": "new",
   "sent_ts": null,
   "id": "zjs"
+ },
+ {
+  "name": "Villa66",
+  "site": "https://villa66.ru",
+  "email": "mail@villa66.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
+  "status": "new",
+  "sent_ts": null,
+  "id": "villa66"
+ },
+ {
+  "name": "Elemer",
+  "site": "https://elemer.ru",
+  "email": "elemer@elemer.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
+  "status": "new",
+  "sent_ts": null,
+  "id": "elemer"
+ },
+ {
+  "name": "Kp River",
+  "site": "https://kp-river.ru",
+  "email": "info@kp-river.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
+  "status": "new",
+  "sent_ts": null,
+  "id": "kpriver"
+ },
+ {
+  "name": "дом на Новой Риге",
+  "site": "https://dom-novayariga.ru",
+  "email": "info@www.dom-novayariga.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: риелтор Новая Рига Рублёвка продажа домов",
+  "status": "new",
+  "sent_ts": null,
+  "id": "domnovayariga"
+ },
+ {
+  "name": "дом на Рублёвке",
+  "site": "https://doma-rublevka.ru",
+  "email": "info@www.doma-rublevka.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: риелтор Новая Рига Рублёвка продажа домов",
+  "status": "new",
+  "sent_ts": null,
+  "id": "domarublevka"
+ },
+ {
+  "name": "Контакты риэлторов",
+  "site": "https://rieltor-1.ru",
+  "email": "info@rieltor-1.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "rieltor1"
+ },
+ {
+  "name": "AVO",
+  "site": "https://avo.estate",
+  "email": "info@avo.estate",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
+  "status": "new",
+  "sent_ts": null,
+  "id": "avo"
+ },
+ {
+  "name": "Выбираем элитный коттедж",
+  "site": "https://kf.expert",
+  "email": "sales@nfgroup.ae",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: риелтор Новая Рига Рублёвка продажа домов",
+  "status": "new",
+  "sent_ts": null,
+  "id": "kf"
+ },
+ {
+  "name": "Foxproperty",
+  "site": "https://foxproperty.ru",
+  "email": "info@foxproperty.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: риелтор Новая Рига Рублёвка продажа домов",
+  "status": "new",
+  "sent_ts": null,
+  "id": "foxproperty"
+ },
+ {
+  "name": "загородную",
+  "site": "https://realtykoral.ru",
+  "email": "info@koralg.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
+  "status": "new",
+  "sent_ts": null,
+  "id": "realtykoral"
+ },
+ {
+  "name": "Натальи Голыгиной",
+  "site": "https://realty-ng.ru",
+  "email": "hello@realty-ng.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
+  "status": "new",
+  "sent_ts": null,
+  "id": "realtyng"
  }
 ]

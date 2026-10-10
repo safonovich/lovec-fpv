@@ -2186,5 +2186,60 @@
   "status": "new",
   "sent_ts": null,
   "id": "realtyng"
+ },
+ {
+  "name": "Terra",
+  "site": "https://terra.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство элитной недвижимости Москва",
+  "status": "new",
+  "sent_ts": null,
+  "id": "terra"
+ },
+ {
+  "name": "Контакты агентства недвижимости Этажи",
+  "site": "https://russia.etagi.com",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "russia"
+ },
+ {
+  "name": "Plan1",
+  "site": "https://plan1.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "plan1"
+ },
+ {
+  "name": "Home Projects",
+  "site": "https://home-projects.ru",
+  "email": "partners@home-projects.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
+  "status": "new",
+  "sent_ts": null,
+  "id": "homeprojects"
+ },
+ {
+  "name": "Контакты АН ЕГСН",
+  "site": "https://egsn.ru",
+  "email": "info@egsn.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "egsn"
  }
 ]

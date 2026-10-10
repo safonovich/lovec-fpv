@@ -1692,8 +1692,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791618197.9131427,
+  "broadcast_ts": 1791618197.9131439
  },
  {
   "id": "zemlyamo",
@@ -1703,8 +1704,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791618244.1783516,
+  "broadcast_ts": 1791618244.1783528
  },
  {
   "id": "goodstone",
@@ -1725,8 +1727,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791618290.4979935,
+  "broadcast_ts": 1791618290.4979942
  },
  {
   "id": "man",
@@ -1747,8 +1750,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791618336.8177836,
+  "broadcast_ts": 1791618336.8177848
  },
  {
   "id": "vgrealty",
@@ -1769,8 +1773,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791618383.0831137,
+  "broadcast_ts": 1791618383.0831149
  },
  {
   "id": "elitnoe",
@@ -1780,8 +1785,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791618429.358399,
+  "broadcast_ts": 1791618429.3584
  },
  {
   "id": "novomoscow",
@@ -1802,8 +1808,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791618475.8188508,
+  "broadcast_ts": 1791618475.818852
  },
  {
   "id": "novostroikino",
@@ -1813,8 +1820,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791618522.149393,
+  "broadcast_ts": 1791618522.1493945
  },
  {
   "id": "rublevka",
@@ -1824,8 +1832,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: риелтор Новая Рига Рублёвка продажа домов",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791618568.349133,
+  "broadcast_ts": 1791618568.3491347
  },
  {
   "id": "alleyadom",
@@ -1835,8 +1844,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791618614.6718156,
+  "broadcast_ts": 1791618614.6718163
  },
  {
   "id": "ssrr",
@@ -1846,8 +1856,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791618662.510898,
+  "broadcast_ts": 1791618662.5108988
  },
  {
   "id": "staplere",
@@ -1857,8 +1868,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791618708.8716793,
+  "broadcast_ts": 1791618708.8716803
  },
  {
   "id": "deltaestate",
@@ -1868,8 +1880,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791618755.1666436,
+  "broadcast_ts": 1791618755.1666446
  },
  {
   "id": "respektan",
@@ -1934,8 +1947,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791618802.9826488,
+  "broadcast_ts": 1791618802.9826503
  },
  {
   "id": "cottage",
@@ -1945,8 +1959,9 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
-  "sent_ts": null
+  "status": "sent",
+  "sent_ts": 1791618849.2415977,
+  "broadcast_ts": 1791618849.2415986
  },
  {
   "name": "АН \"Загородная Элитная Недвижимость\"",

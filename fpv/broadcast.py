@@ -41,7 +41,7 @@ def _usable(email: str) -> bool:
 
 def targets(agencies: list[dict], cfg: dict) -> list[dict]:
     """Кому ещё не отправляли: живой email, не sent/skipped/replied, без дублей."""
-    skip = {"sent", "skipped", "replied"}
+    skip = {"sent", "skipped", "replied", "bounced"}
     seen, out = set(), []
     for a in agencies:
         if a.get("status") in skip or a.get("broadcast_ts"):

@@ -456,7 +456,8 @@
   "note": "найдено автоматически (OSM)",
   "status": "sent",
   "sent_ts": 1791289765.5289671,
-  "broadcast_ts": 1791289765.5289688
+  "broadcast_ts": 1791289765.5289688,
+  "followup_ts": 1791649346.055876
  },
  {
   "id": "kotelnicheskaya21",
@@ -481,7 +482,8 @@
   "note": "найдено автоматически (OSM)",
   "status": "sent",
   "sent_ts": 1791289811.9226515,
-  "broadcast_ts": 1791289811.922653
+  "broadcast_ts": 1791289811.922653,
+  "followup_ts": 1791649347.375985
  },
  {
   "id": "thefive",
@@ -494,7 +496,8 @@
   "note": "найдено автоматически (OSM)",
   "status": "sent",
   "sent_ts": 1791289858.9140842,
-  "broadcast_ts": 1791289858.9140851
+  "broadcast_ts": 1791289858.9140851,
+  "followup_ts": 1791649350.1829476
  },
  {
   "id": "terrasunspain",
@@ -544,7 +547,8 @@
   "status": "sent",
   "sent_ts": 1791289905.753781,
   "wa": "+79154499863",
-  "broadcast_ts": 1791289905.753782
+  "broadcast_ts": 1791289905.753782,
+  "followup_ts": 1791649351.555273
  },
  {
   "id": "butovo",
@@ -582,7 +586,8 @@
   "status": "sent",
   "sent_ts": 1791289952.15081,
   "wa": "+79857271979",
-  "broadcast_ts": 1791289952.150811
+  "broadcast_ts": 1791289952.150811,
+  "followup_ts": 1791649354.4026487
  },
  {
   "id": "dashkovrealty",
@@ -607,7 +612,8 @@
   "note": "найдено автоматически (OSM)",
   "status": "sent",
   "sent_ts": 1791289998.6614592,
-  "broadcast_ts": 1791289998.661464
+  "broadcast_ts": 1791289998.661464,
+  "followup_ts": 1791649355.839564
  },
  {
   "id": "headway",
@@ -620,7 +626,8 @@
   "note": "найдено автоматически (OSM)",
   "status": "sent",
   "sent_ts": 1791290045.3508346,
-  "broadcast_ts": 1791290045.3508358
+  "broadcast_ts": 1791290045.3508358,
+  "followup_ts": 1791649357.122245
  },
  {
   "id": "osm79da466a",
@@ -633,7 +640,8 @@
   "note": "найдено автоматически (OSM)",
   "status": "sent",
   "sent_ts": 1791290091.7402008,
-  "broadcast_ts": 1791290091.7402017
+  "broadcast_ts": 1791290091.7402017,
+  "followup_ts": 1791649359.459865
  },
  {
   "id": "realtor",
@@ -646,7 +654,8 @@
   "note": "найдено автоматически (OSM)",
   "status": "sent",
   "sent_ts": 1791290138.1373749,
-  "broadcast_ts": 1791290138.137376
+  "broadcast_ts": 1791290138.137376,
+  "followup_ts": 1791649360.8485942
  },
  {
   "id": "skndom",
@@ -659,7 +668,8 @@
   "note": "найдено автоматически (OSM)",
   "status": "sent",
   "sent_ts": 1791290184.5575807,
-  "broadcast_ts": 1791290184.5575817
+  "broadcast_ts": 1791290184.5575817,
+  "followup_ts": 1791649362.1269455
  },
  {
   "id": "samoletplus",
@@ -672,7 +682,8 @@
   "note": "найдено автоматически (OSM)",
   "status": "sent",
   "sent_ts": 1791290230.987404,
-  "broadcast_ts": 1791290230.987405
+  "broadcast_ts": 1791290230.987405,
+  "followup_ts": 1791649363.424078
  },
  {
   "id": "prioritet",
@@ -721,7 +732,8 @@
   "note": "найдено автоматически (OSM)",
   "status": "sent",
   "sent_ts": 1791290277.4058316,
-  "broadcast_ts": 1791290277.4058328
+  "broadcast_ts": 1791290277.4058328,
+  "followup_ts": 1791649364.9688358
  },
  {
   "id": "modestate",
@@ -735,7 +747,8 @@
   "status": "sent",
   "sent_ts": 1791290324.9067056,
   "wa": "+79265555077",
-  "broadcast_ts": 1791290324.906707
+  "broadcast_ts": 1791290324.906707,
+  "followup_ts": 1791649367.0831778
  },
  {
   "id": "msk",
@@ -748,7 +761,8 @@
   "note": "найдено автоматически (OSM)",
   "status": "sent",
   "sent_ts": 1791290371.3234115,
-  "broadcast_ts": 1791290371.3234165
+  "broadcast_ts": 1791290371.3234165,
+  "followup_ts": 1791649368.406515
  },
  {
   "id": "komnatastudia",
@@ -761,7 +775,8 @@
   "note": "найдено автоматически (OSM)",
   "status": "sent",
   "sent_ts": 1791290418.1364248,
-  "broadcast_ts": 1791290418.1364257
+  "broadcast_ts": 1791290418.1364257,
+  "followup_ts": 1791649369.729243
  },
  {
   "id": "gjacip",

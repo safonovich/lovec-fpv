@@ -898,7 +898,7 @@
   "tg": null,
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "sent",
+  "status": "bounced",
   "sent_ts": 1791376041.6643867,
   "broadcast_ts": 1791376041.664388,
   "followup_ts": 1791738395.1083724
@@ -1034,7 +1034,7 @@
   "tg": "@novostroykithebest",
   "district": "Москва",
   "note": "найдено автоматически (OSM)",
-  "status": "sent",
+  "status": "bounced",
   "sent_ts": 1791376323.129018,
   "broadcast_ts": 1791376323.1290195,
   "followup_ts": 1791738415.4684725
@@ -1086,7 +1086,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "sent",
+  "status": "bounced",
   "sent_ts": 1791376415.7049937,
   "broadcast_ts": 1791376415.704995,
   "followup_ts": 1791738421.3825347

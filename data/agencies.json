@@ -1996,9 +1996,10 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
-  "status": "new",
-  "sent_ts": null,
-  "id": "iresidence"
+  "status": "sent",
+  "sent_ts": 1791719523.173779,
+  "id": "iresidence",
+  "broadcast_ts": 1791719523.17378
  },
  {
   "name": "дом в коттеджном поселке",
@@ -2007,9 +2008,10 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
-  "status": "new",
-  "sent_ts": null,
-  "id": "novostroev"
+  "status": "sent",
+  "sent_ts": 1791719569.2508419,
+  "id": "novostroev",
+  "broadcast_ts": 1791719569.250843
  },
  {
   "name": "Spravochnika",
@@ -2018,9 +2020,10 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
-  "sent_ts": null,
-  "id": "spravochnika"
+  "status": "sent",
+  "sent_ts": 1791719615.98597,
+  "id": "spravochnika",
+  "broadcast_ts": 1791719615.9859707
  },
  {
   "name": "Маршала Малиновского 8",
@@ -2051,9 +2054,10 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
-  "status": "new",
-  "sent_ts": null,
-  "id": "bulatovoresidence"
+  "status": "sent",
+  "sent_ts": 1791719662.6700318,
+  "id": "bulatovoresidence",
+  "broadcast_ts": 1791719662.6700327
  },
  {
   "name": "ZJS",
@@ -2073,9 +2077,10 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
-  "status": "new",
-  "sent_ts": null,
-  "id": "villa66"
+  "status": "sent",
+  "sent_ts": 1791719709.1111248,
+  "id": "villa66",
+  "broadcast_ts": 1791719709.111126
  },
  {
   "name": "Elemer",
@@ -2084,9 +2089,10 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
-  "status": "new",
-  "sent_ts": null,
-  "id": "elemer"
+  "status": "sent",
+  "sent_ts": 1791719755.9090068,
+  "id": "elemer",
+  "broadcast_ts": 1791719755.9090078
  },
  {
   "name": "Kp River",
@@ -2095,9 +2101,10 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
-  "status": "new",
-  "sent_ts": null,
-  "id": "kpriver"
+  "status": "sent",
+  "sent_ts": 1791719801.9263952,
+  "id": "kpriver",
+  "broadcast_ts": 1791719801.926396
  },
  {
   "name": "дом на Новой Риге",
@@ -2106,9 +2113,10 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: риелтор Новая Рига Рублёвка продажа домов",
-  "status": "new",
-  "sent_ts": null,
-  "id": "domnovayariga"
+  "status": "sent",
+  "sent_ts": 1791719848.1205835,
+  "id": "domnovayariga",
+  "broadcast_ts": 1791719848.1205845
  },
  {
   "name": "дом на Рублёвке",
@@ -2117,9 +2125,10 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: риелтор Новая Рига Рублёвка продажа домов",
-  "status": "new",
-  "sent_ts": null,
-  "id": "domarublevka"
+  "status": "sent",
+  "sent_ts": 1791719894.4303806,
+  "id": "domarublevka",
+  "broadcast_ts": 1791719894.4303813
  },
  {
   "name": "Контакты риэлторов",
@@ -2128,9 +2137,10 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
-  "sent_ts": null,
-  "id": "rieltor1"
+  "status": "sent",
+  "sent_ts": 1791719941.0437694,
+  "id": "rieltor1",
+  "broadcast_ts": 1791719941.0437703
  },
  {
   "name": "AVO",
@@ -2139,9 +2149,10 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
-  "status": "new",
-  "sent_ts": null,
-  "id": "avo"
+  "status": "sent",
+  "sent_ts": 1791719987.0857666,
+  "id": "avo",
+  "broadcast_ts": 1791719987.0857677
  },
  {
   "name": "Выбираем элитный коттедж",
@@ -2150,9 +2161,10 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: риелтор Новая Рига Рублёвка продажа домов",
-  "status": "new",
-  "sent_ts": null,
-  "id": "kf"
+  "status": "sent",
+  "sent_ts": 1791720033.5184906,
+  "id": "kf",
+  "broadcast_ts": 1791720033.5184922
  },
  {
   "name": "Foxproperty",
@@ -2161,9 +2173,10 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: риелтор Новая Рига Рублёвка продажа домов",
-  "status": "new",
-  "sent_ts": null,
-  "id": "foxproperty"
+  "status": "sent",
+  "sent_ts": 1791720079.718947,
+  "id": "foxproperty",
+  "broadcast_ts": 1791720079.718948
  },
  {
   "name": "загородную",
@@ -2172,9 +2185,10 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
-  "sent_ts": null,
-  "id": "realtykoral"
+  "status": "sent",
+  "sent_ts": 1791720127.3646646,
+  "id": "realtykoral",
+  "broadcast_ts": 1791720127.3646655
  },
  {
   "name": "Натальи Голыгиной",
@@ -2183,9 +2197,10 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
-  "sent_ts": null,
-  "id": "realtyng"
+  "status": "sent",
+  "sent_ts": 1791720173.3249288,
+  "id": "realtyng",
+  "broadcast_ts": 1791720173.3249295
  },
  {
   "name": "Terra",

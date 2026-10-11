@@ -2359,5 +2359,60 @@
   "status": "new",
   "sent_ts": null,
   "id": "townhouse"
+ },
+ {
+  "name": "собственников и риэлторов",
+  "site": "https://afy.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "afy"
+ },
+ {
+  "name": "ФОРТ",
+  "site": "https://msk.blizko.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "msk6"
+ },
+ {
+  "name": "квартиры",
+  "site": "https://obmenkvartir.pro",
+  "email": "info@obmenkvartir.pro",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "obmenkvartir"
+ },
+ {
+  "name": "Fiksn",
+  "site": "https://fiksn.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "fiksn"
+ },
+ {
+  "name": "Forretailer",
+  "site": "https://forretailer.ru",
+  "email": "mail@forretailer.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "forretailer"
  }
 ]

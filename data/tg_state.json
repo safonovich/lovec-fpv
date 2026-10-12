@@ -1,9 +1,9 @@
 {
  "offset": 69236350,
- "last_leads_date": "2026-10-04",
- "imap_uid": 20703,
+ "last_leads_date": "2026-10-12",
+ "imap_uid": 20714,
  "base_empty_warned": "2026-10-04",
  "serper_cursor": 288,
- "broadcast_on": true,
- "broadcast_date": "2026-10-11"
+ "broadcast_on": false,
+ "broadcast_date": "2026-10-12"
 }

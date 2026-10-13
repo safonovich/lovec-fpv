@@ -2452,5 +2452,82 @@
   "sent_ts": 1791813936.8290021,
   "id": "forretailer",
   "broadcast_ts": 1791813936.8290033
+ },
+ {
+  "name": "Ваш адрес, ООО",
+  "site": "https://ru.vspravke.com",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "ru"
+ },
+ {
+  "name": "Корпорация",
+  "site": "https://msk.ros-spravka.ru",
+  "email": "reg@ros-spravka.com",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "msk7"
+ },
+ {
+  "name": "департамент",
+  "site": "https://gdninfo.ru",
+  "email": "info@gdninfo.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "gdninfo"
+ },
+ {
+  "name": "Kalinka Realty",
+  "site": "https://kalinka-realty.ru",
+  "email": "pr@kalinka-realty.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
+  "status": "new",
+  "sent_ts": null,
+  "id": "kalinkarealty"
+ },
+ {
+  "name": "Mperspektiva",
+  "site": "https://mperspektiva.ru",
+  "email": "pertseva@mperspektiva.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: риелтор Новая Рига Рублёвка продажа домов",
+  "status": "new",
+  "sent_ts": null,
+  "id": "mperspektiva"
+ },
+ {
+  "name": "Справочник Подмосковья > Строительство",
+  "site": "https://podmoskove.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
+  "status": "new",
+  "sent_ts": null,
+  "id": "podmoskove"
+ },
+ {
+  "name": "Zemexx",
+  "site": "https://zemexx.ru",
+  "email": "office@zemexx.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
+  "status": "new",
+  "sent_ts": null,
+  "id": "zemexx"
  }
 ]

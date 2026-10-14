@@ -2529,5 +2529,27 @@
   "status": "new",
   "sent_ts": null,
   "id": "zemexx"
+ },
+ {
+  "name": "Дима может",
+  "site": "https://vk.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
+  "status": "new",
+  "sent_ts": null,
+  "id": "vk"
+ },
+ {
+  "name": "дачу! История загородной жизни",
+  "site": "https://peshkombooks.ru",
+  "email": "info@peshkombooks.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
+  "status": "new",
+  "sent_ts": null,
+  "id": "peshkombooks"
  }
 ]

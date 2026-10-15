@@ -2562,5 +2562,16 @@
   "status": "new",
   "sent_ts": null,
   "id": "msk8"
+ },
+ {
+  "name": "Инфинити",
+  "site": "https://infinity.realty",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "infinity"
  }
 ]

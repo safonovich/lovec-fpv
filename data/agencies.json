@@ -2551,5 +2551,16 @@
   "status": "new",
   "sent_ts": null,
   "id": "peshkombooks"
+ },
+ {
+  "name": "MSK",
+  "site": "https://msk.spravka.city",
+  "email": "support@spravka.city",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "msk8"
  }
 ]

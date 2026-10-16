@@ -42,6 +42,9 @@ jobs:
         run: python fpv/run.py
 
       - name: Сохранить состояние
+        # Состояние пишем всегда: если прогон упал после отправки писем,
+        # без этого followup_ts и пометки отбоя теряются — и всё уходит по второму разу.
+        if: always()
         run: |
           git config user.name "fpv-bot"
           git config user.email "fpv@users.noreply.github.com"

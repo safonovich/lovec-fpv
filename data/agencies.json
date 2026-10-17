@@ -1293,33 +1293,35 @@
   "name": "Avarealty",
   "site": "https://avarealty.ru",
   "email": null,
-  "phone": null,
-  "tg": null,
+  "phone": "+74959736265",
+  "tg": "@Avangard_mos",
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
-  "sent_ts": null
+  "status": "offered",
+  "sent_ts": null,
+  "wa": "+79777300690"
  },
  {
   "id": "moskvabusiness",
   "name": "Moskva Business",
   "site": "https://moskva-business.ru",
-  "email": null,
+  "email": "businessrus@bk.ru",
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
   "id": "agent112",
   "name": "Agent112",
   "site": "https://agent112.ru",
-  "email": null,
-  "phone": null,
-  "tg": null,
+  "email": "novik911@yandex.ru",
+  "phone": "+79031701384",
+  "tg": "@Realtor_Tatyana_Mamontova",
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
-  "sent_ts": null
+  "status": "offered",
+  "sent_ts": null,
+  "wa": "+79031701384"
  },
  {
   "id": "biznesarenda",
@@ -1754,7 +1756,8 @@
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
   "status": "sent",
   "sent_ts": 1791618197.9131427,
-  "broadcast_ts": 1791618197.9131439
+  "broadcast_ts": 1791618197.9131439,
+  "followup_ts": 1792230950.742224
  },
  {
   "id": "zemlyamo",
@@ -1766,7 +1769,8 @@
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
   "status": "sent",
   "sent_ts": 1791618244.1783516,
-  "broadcast_ts": 1791618244.1783528
+  "broadcast_ts": 1791618244.1783528,
+  "followup_ts": 1792230952.5163882
  },
  {
   "id": "goodstone",
@@ -1789,7 +1793,8 @@
   "note": "найдено поиском: агентство элитной недвижимости Москва",
   "status": "sent",
   "sent_ts": 1791618290.4979935,
-  "broadcast_ts": 1791618290.4979942
+  "broadcast_ts": 1791618290.4979942,
+  "followup_ts": 1792230954.273422
  },
  {
   "id": "man",
@@ -1812,7 +1817,8 @@
   "note": "найдено поиском: агентство элитной недвижимости Москва",
   "status": "sent",
   "sent_ts": 1791618336.8177836,
-  "broadcast_ts": 1791618336.8177848
+  "broadcast_ts": 1791618336.8177848,
+  "followup_ts": 1792230955.8218038
  },
  {
   "id": "vgrealty",
@@ -1835,7 +1841,8 @@
   "note": "найдено поиском: агентство элитной недвижимости Москва",
   "status": "sent",
   "sent_ts": 1791618383.0831137,
-  "broadcast_ts": 1791618383.0831149
+  "broadcast_ts": 1791618383.0831149,
+  "followup_ts": 1792230957.3899074
  },
  {
   "id": "elitnoe",
@@ -1847,7 +1854,8 @@
   "note": "найдено поиском: агентство элитной недвижимости Москва",
   "status": "sent",
   "sent_ts": 1791618429.358399,
-  "broadcast_ts": 1791618429.3584
+  "broadcast_ts": 1791618429.3584,
+  "followup_ts": 1792230959.3295305
  },
  {
   "id": "novomoscow",
@@ -1882,7 +1890,8 @@
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
   "status": "sent",
   "sent_ts": 1791618522.149393,
-  "broadcast_ts": 1791618522.1493945
+  "broadcast_ts": 1791618522.1493945,
+  "followup_ts": 1792230961.1158059
  },
  {
   "id": "rublevka",
@@ -1906,7 +1915,8 @@
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
   "status": "sent",
   "sent_ts": 1791618614.6718156,
-  "broadcast_ts": 1791618614.6718163
+  "broadcast_ts": 1791618614.6718163,
+  "followup_ts": 1792230962.682536
  },
  {
   "id": "ssrr",
@@ -1918,7 +1928,8 @@
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
   "status": "sent",
   "sent_ts": 1791618662.510898,
-  "broadcast_ts": 1791618662.5108988
+  "broadcast_ts": 1791618662.5108988,
+  "followup_ts": 1792230964.364274
  },
  {
   "id": "staplere",
@@ -1930,7 +1941,8 @@
   "note": "найдено поиском: агентство элитной недвижимости Москва",
   "status": "sent",
   "sent_ts": 1791618708.8716793,
-  "broadcast_ts": 1791618708.8716803
+  "broadcast_ts": 1791618708.8716803,
+  "followup_ts": 1792230965.940953
  },
  {
   "id": "deltaestate",
@@ -1942,7 +1954,8 @@
   "note": "найдено поиском: агентство элитной недвижимости Москва",
   "status": "sent",
   "sent_ts": 1791618755.1666436,
-  "broadcast_ts": 1791618755.1666446
+  "broadcast_ts": 1791618755.1666446,
+  "followup_ts": 1792230967.70723
  },
  {
   "id": "respektan",
@@ -2021,7 +2034,8 @@
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
   "status": "sent",
   "sent_ts": 1791618849.2415977,
-  "broadcast_ts": 1791618849.2415986
+  "broadcast_ts": 1791618849.2415986,
+  "followup_ts": 1792230969.3166735
  },
  {
   "name": "АН \"Загородная Элитная Недвижимость\"",
@@ -2044,7 +2058,8 @@
   "status": "sent",
   "sent_ts": 1791719523.173779,
   "id": "iresidence",
-  "broadcast_ts": 1791719523.17378
+  "broadcast_ts": 1791719523.17378,
+  "followup_ts": 1792230970.9444675
  },
  {
   "name": "дом в коттеджном поселке",
@@ -2056,7 +2071,8 @@
   "status": "sent",
   "sent_ts": 1791719569.2508419,
   "id": "novostroev",
-  "broadcast_ts": 1791719569.250843
+  "broadcast_ts": 1791719569.250843,
+  "followup_ts": 1792230972.5775065
  },
  {
   "name": "Spravochnika",
@@ -2068,7 +2084,8 @@
   "status": "sent",
   "sent_ts": 1791719615.98597,
   "id": "spravochnika",
-  "broadcast_ts": 1791719615.9859707
+  "broadcast_ts": 1791719615.9859707,
+  "followup_ts": 1792230974.4182272
  },
  {
   "name": "Маршала Малиновского 8",
@@ -2102,7 +2119,8 @@
   "status": "sent",
   "sent_ts": 1791719662.6700318,
   "id": "bulatovoresidence",
-  "broadcast_ts": 1791719662.6700327
+  "broadcast_ts": 1791719662.6700327,
+  "followup_ts": 1792230976.0896788
  },
  {
   "name": "ZJS",
@@ -2125,7 +2143,8 @@
   "status": "sent",
   "sent_ts": 1791719709.1111248,
   "id": "villa66",
-  "broadcast_ts": 1791719709.111126
+  "broadcast_ts": 1791719709.111126,
+  "followup_ts": 1792230977.6545043
  },
  {
   "name": "Elemer",
@@ -2137,7 +2156,8 @@
   "status": "sent",
   "sent_ts": 1791719755.9090068,
   "id": "elemer",
-  "broadcast_ts": 1791719755.9090078
+  "broadcast_ts": 1791719755.9090078,
+  "followup_ts": 1792230979.4986892
  },
  {
   "name": "Kp River",
@@ -2185,7 +2205,8 @@
   "status": "sent",
   "sent_ts": 1791719941.0437694,
   "id": "rieltor1",
-  "broadcast_ts": 1791719941.0437703
+  "broadcast_ts": 1791719941.0437703,
+  "followup_ts": 1792230981.28117
  },
  {
   "name": "AVO",
@@ -2197,7 +2218,8 @@
   "status": "sent",
   "sent_ts": 1791719987.0857666,
   "id": "avo",
-  "broadcast_ts": 1791719987.0857677
+  "broadcast_ts": 1791719987.0857677,
+  "followup_ts": 1792230983.1302705
  },
  {
   "name": "Выбираем элитный коттедж",
@@ -2209,7 +2231,8 @@
   "status": "sent",
   "sent_ts": 1791720033.5184906,
   "id": "kf",
-  "broadcast_ts": 1791720033.5184922
+  "broadcast_ts": 1791720033.5184922,
+  "followup_ts": 1792230985.1659453
  },
  {
   "name": "Foxproperty",
@@ -2221,7 +2244,8 @@
   "status": "sent",
   "sent_ts": 1791720079.718947,
   "id": "foxproperty",
-  "broadcast_ts": 1791720079.718948
+  "broadcast_ts": 1791720079.718948,
+  "followup_ts": 1792230987.067716
  },
  {
   "name": "загородную",
@@ -2233,7 +2257,8 @@
   "status": "sent",
   "sent_ts": 1791720127.3646646,
   "id": "realtykoral",
-  "broadcast_ts": 1791720127.3646655
+  "broadcast_ts": 1791720127.3646655,
+  "followup_ts": 1792230988.8038144
  },
  {
   "name": "Натальи Голыгиной",
@@ -2245,7 +2270,8 @@
   "status": "sent",
   "sent_ts": 1791720173.3249288,
   "id": "realtyng",
-  "broadcast_ts": 1791720173.3249295
+  "broadcast_ts": 1791720173.3249295,
+  "followup_ts": 1792230990.7344248
  },
  {
   "name": "Terra",
@@ -2290,7 +2316,8 @@
   "status": "sent",
   "sent_ts": 1791813604.3818274,
   "id": "homeprojects",
-  "broadcast_ts": 1791813604.3818283
+  "broadcast_ts": 1791813604.3818283,
+  "followup_ts": 1792230992.666559
  },
  {
   "name": "Контакты АН ЕГСН",
@@ -2302,7 +2329,8 @@
   "status": "sent",
   "sent_ts": 1791813652.5230098,
   "id": "egsn",
-  "broadcast_ts": 1791813652.5230114
+  "broadcast_ts": 1791813652.5230114,
+  "followup_ts": 1792230994.532929
  },
  {
   "name": "Novaya Riga",
@@ -2325,7 +2353,8 @@
   "status": "sent",
   "sent_ts": 1791813698.9619277,
   "id": "novosel99",
-  "broadcast_ts": 1791813698.9619296
+  "broadcast_ts": 1791813698.9619296,
+  "followup_ts": 1792230996.7426736
  },
  {
   "name": "застройщики Москвы",
@@ -2348,7 +2377,8 @@
   "status": "sent",
   "sent_ts": 1791813745.4137094,
   "id": "usupovolp",
-  "broadcast_ts": 1791813745.4137108
+  "broadcast_ts": 1791813745.4137108,
+  "followup_ts": 1792230998.4967618
  },
  {
   "name": "Rbcrealty",
@@ -2360,7 +2390,8 @@
   "status": "sent",
   "sent_ts": 1791813797.419659,
   "id": "rbcrealty",
-  "broadcast_ts": 1791813797.4196606
+  "broadcast_ts": 1791813797.4196606,
+  "followup_ts": 1792231000.2349708
  },
  {
   "name": "дом на Рублевке",
@@ -2383,7 +2414,8 @@
   "status": "sent",
   "sent_ts": 1791813843.8537052,
   "id": "svetlananaumova",
-  "broadcast_ts": 1791813843.8537061
+  "broadcast_ts": 1791813843.8537061,
+  "followup_ts": 1792231001.7898192
  },
  {
   "name": "Застройщики поселков таунхаусов",
@@ -2428,7 +2460,8 @@
   "status": "sent",
   "sent_ts": 1791813890.411903,
   "id": "obmenkvartir",
-  "broadcast_ts": 1791813890.411904
+  "broadcast_ts": 1791813890.411904,
+  "followup_ts": 1792231012.7069607
  },
  {
   "name": "Fiksn",
@@ -2451,7 +2484,8 @@
   "status": "sent",
   "sent_ts": 1791813936.8290021,
   "id": "forretailer",
-  "broadcast_ts": 1791813936.8290033
+  "broadcast_ts": 1791813936.8290033,
+  "followup_ts": 1792231014.4825118
  },
  {
   "name": "Ваш адрес, ООО",

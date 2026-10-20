@@ -1473,7 +1473,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "offered",
+  "status": "skipped",
   "sent_ts": null
  },
  {

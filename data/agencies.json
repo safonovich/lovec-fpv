@@ -2629,5 +2629,27 @@
   "status": "new",
   "sent_ts": null,
   "id": "msk9"
+ },
+ {
+  "name": "Finch",
+  "site": "https://finch.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство элитной недвижимости Москва",
+  "status": "new",
+  "sent_ts": null,
+  "id": "finch"
+ },
+ {
+  "name": "MSK",
+  "site": "https://msk.delsprav.com",
+  "email": "admin@delsprav.com",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "msk10"
  }
 ]

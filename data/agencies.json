@@ -1462,7 +1462,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -1473,7 +1473,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -1494,10 +1494,10 @@
   "name": "Риэлторские",
   "site": "https://orgpage.ru",
   "email": null,
-  "phone": null,
+  "phone": "+79160443288",
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

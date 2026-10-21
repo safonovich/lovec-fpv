@@ -1246,7 +1246,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: продажа таунхаусов Подмосковье агентство",
-  "status": "sent",
+  "status": "replied",
   "sent_ts": 1791463109.7458687,
   "broadcast_ts": 1791463109.74587,
   "followup_ts": 1791813590.3380027
@@ -1534,7 +1534,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -1571,7 +1571,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -1591,11 +1591,11 @@
   "id": "beyond",
   "name": "Beyond",
   "site": "https://beyond.ru",
-  "email": null,
-  "phone": null,
-  "tg": null,
+  "email": "rating@mail.ru",
+  "phone": "+79312446007",
+  "tg": "@beyondspb",
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

@@ -2651,5 +2651,71 @@
   "status": "new",
   "sent_ts": null,
   "id": "msk10"
+ },
+ {
+  "name": "SPR",
+  "site": "https://spr.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "spr"
+ },
+ {
+  "name": "Spravka",
+  "site": "https://spravka.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "spravka"
+ },
+ {
+  "name": "городских новостей «Москва»",
+  "site": "https://mskagency.ru",
+  "email": "mosmed@m24.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "mskagency"
+ },
+ {
+  "name": "Иркутск",
+  "site": "https://aeroflot.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "aeroflot"
+ },
+ {
+  "name": "Meduza",
+  "site": "https://meduza.io",
+  "email": "shop@meduza.io",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "meduza"
+ },
+ {
+  "name": "Interfax Russia",
+  "site": "https://interfax-russia.ru",
+  "email": null,
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "interfaxrussia"
  }
 ]

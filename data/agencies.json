@@ -1704,7 +1704,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -1776,11 +1776,11 @@
   "id": "goodstone",
   "name": "Goodstone",
   "site": "https://goodstone.ru",
-  "email": null,
-  "phone": null,
+  "email": "info@goodstone.ru",
+  "phone": "+74951398010",
   "tg": null,
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -1801,11 +1801,12 @@
   "name": "МАН",
   "site": "https://man.msk.ru",
   "email": null,
-  "phone": null,
+  "phone": "+74957972050",
   "tg": null,
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
-  "sent_ts": null
+  "status": "offered",
+  "sent_ts": null,
+  "wa": "+79031634994"
  },
  {
   "id": "premiumrealty",

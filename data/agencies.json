@@ -1826,10 +1826,10 @@
   "name": "Элитное жилье",
   "site": "https://vgrealty.ru",
   "email": null,
-  "phone": null,
+  "phone": "+79361365933",
   "tg": null,
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -1866,7 +1866,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -1963,10 +1963,10 @@
   "name": "Respekt An",
   "site": "https://respekt-an.ru",
   "email": null,
-  "phone": null,
+  "phone": "+74956410408",
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

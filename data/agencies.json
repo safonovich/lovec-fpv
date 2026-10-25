@@ -1974,11 +1974,12 @@
   "name": "Ваш дом",
   "site": "https://agentstvo-zagorodnoy.orgs.biz",
   "email": null,
-  "phone": null,
+  "phone": "+79067162020",
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
-  "sent_ts": null
+  "status": "offered",
+  "sent_ts": null,
+  "wa": "+79067162020"
  },
  {
   "id": "antb",
@@ -1988,18 +1989,18 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
   "id": "abrealty",
   "name": "Ab Realty",
   "site": "https://ab-realty.ru",
-  "email": null,
-  "phone": null,
+  "email": "info@ab-realty.ru",
+  "phone": "+74952492409",
   "tg": null,
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {

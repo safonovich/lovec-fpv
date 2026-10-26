@@ -2011,7 +2011,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null
  },
  {
@@ -2043,10 +2043,10 @@
   "name": "АН \"Загородная Элитная Недвижимость\"",
   "site": "https://zagorod-vip.ru",
   "email": null,
-  "phone": null,
+  "phone": "+79586442251",
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null,
   "id": "zagorodvip"
  },
@@ -2096,7 +2096,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null,
   "id": "moscow2"
  },

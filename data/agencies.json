@@ -2104,12 +2104,13 @@
   "name": "ДИАЛОГ",
   "site": "https://olimpland.ru",
   "email": null,
-  "phone": null,
+  "phone": "+74952222219",
   "tg": null,
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null,
-  "id": "olimpland"
+  "id": "olimpland",
+  "wa": "+79852222219"
  },
  {
   "name": "Bulatovoresidence",
@@ -2131,7 +2132,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство загородной недвижимости Подмосковье",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null,
   "id": "zjs"
  },
@@ -2279,12 +2280,13 @@
   "name": "Terra",
   "site": "https://terra.ru",
   "email": null,
-  "phone": null,
-  "tg": null,
+  "phone": "+74957887788",
+  "tg": "@diana_dostovalova",
   "note": "найдено поиском: агентство элитной недвижимости Москва",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null,
-  "id": "terra"
+  "id": "terra",
+  "wa": "+79031238035"
  },
  {
   "name": "Контакты агентства недвижимости Этажи",

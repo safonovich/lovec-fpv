@@ -2364,10 +2364,10 @@
   "name": "застройщики Москвы",
   "site": "https://kvmeter.ru",
   "email": null,
-  "phone": null,
+  "phone": "+74950218859",
   "tg": null,
   "note": "найдено поиском: агентство недвижимости Москва новостройки отдел продаж",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null,
   "id": "kvmeter"
  },
@@ -2404,7 +2404,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: риелтор Новая Рига Рублёвка продажа домов",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null,
   "id": "rublevka2"
  },
@@ -2424,11 +2424,11 @@
  {
   "name": "Застройщики поселков таунхаусов",
   "site": "https://townhouse.ru",
-  "email": null,
-  "phone": null,
+  "email": "townhouseru@gmail.com",
+  "phone": "+79238294803",
   "tg": null,
   "note": "найдено поиском: застройщик коттеджных посёлков Подмосковье отдел продаж",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null,
   "id": "townhouse"
  },

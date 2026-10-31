@@ -2498,7 +2498,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null,
   "id": "ru"
  },
@@ -2509,7 +2509,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null,
   "id": "msk7"
  },
@@ -2517,10 +2517,10 @@
   "name": "департамент",
   "site": "https://gdninfo.ru",
   "email": "info@gdninfo.ru",
-  "phone": null,
+  "phone": "+74957308727",
   "tg": null,
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null,
   "id": "gdninfo"
  },

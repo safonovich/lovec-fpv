@@ -2663,7 +2663,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null,
   "id": "spr"
  },
@@ -2674,7 +2674,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null,
   "id": "spravka"
  },
@@ -2682,10 +2682,10 @@
   "name": "городских новостей «Москва»",
   "site": "https://mskagency.ru",
   "email": "mosmed@m24.ru",
-  "phone": null,
-  "tg": null,
+  "phone": "+74950098023",
+  "tg": "@moscownewsagency",
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null,
   "id": "mskagency"
  },

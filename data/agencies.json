@@ -2696,7 +2696,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null,
   "id": "aeroflot"
  },
@@ -2705,9 +2705,9 @@
   "site": "https://meduza.io",
   "email": "shop@meduza.io",
   "phone": null,
-  "tg": null,
+  "tg": "@meduzalive",
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null,
   "id": "meduza"
  },
@@ -2718,7 +2718,7 @@
   "phone": null,
   "tg": null,
   "note": "найдено поиском: агентство недвижимости Москва контакты",
-  "status": "new",
+  "status": "offered",
   "sent_ts": null,
   "id": "interfaxrussia"
  },

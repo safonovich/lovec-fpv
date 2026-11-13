@@ -2732,5 +2732,16 @@
   "status": "offered",
   "sent_ts": null,
   "id": "andomoi"
+ },
+ {
+  "name": "Контактная информация",
+  "site": "https://aadres.ru",
+  "email": "info@aadres.ru",
+  "phone": null,
+  "tg": null,
+  "note": "найдено поиском: агентство недвижимости Москва контакты",
+  "status": "new",
+  "sent_ts": null,
+  "id": "aadres"
  }
 ]
